@@ -2573,59 +2573,80 @@ Unlock Your Deals
         }
     </style> -->
 
-
     <div id="boxes" class="col-sm-6 col-sm-offset-3">
         <a href="tel:(888) 441-8506">
-           <div class="d-block d-md-block d-lg-none">
-              <div class="modal fade show custompopup" style="display: block;">
-                 <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content pt-0">
-                       <div class="modal-footer border-0">
-                           <p  onclick="myFunction1()" class="btn-secondary">
-                           <i class="fa fa-close " aria-hidden="true"></i></p>
-                           
-                           </div>
-                       <div class="popup-content">
-                          <img alt="Logo" class="header-logo" loading="lazy" width="120" height="40" decoding="async" data-nimg="1" style="color:transparent" src="images/expedia.png">
-                          <p>Talk to a travel expert and Save 25%</p>
-                          <h2 class="support-no">
-                             <i class="fas fa-headset"></i> <!-- -->(888) 441-8506<!-- --> 
-                          </h2>
-                          <hr>
-                          <h5>24/7 Reservation Support</h5>
-                          <div class="row justify-content-center">
-                             <div class="col-6 align-self-center"><img alt="Logo" class="" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto" sizes="100vw" src="images/left-man.jpg"></div>
-                             <div class="col-6">
-                                <ul class="arrow-list">
-                                   <li>Tickets Booking</li>
-                                   <li>Manage Booking</li>
-                                   <li>Customer Service</li>
-                                   <li>Cancellation & Refunds
-                                </li>
-                                <li>Quick & Easy Changes/Rebook
-                                </li>
-                                </ul>
-                             </div>
-                             <div class="mt-3 call-offers">
-                                 <img src="images/cal2.gif" style="width:50px; height:50px">
-                                <div>
-                                   <p class="mb-0">Call Us &amp; get Upto <small>40%OFF</small> on Flights</p>
-                                   <h4 class="mb-0">(888) 441-8506</h4>
+            <div class="d-block d-md-block d-lg-none">
+                <div class="modal fade show custompopup" style="display: block;">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content pt-0">
+                            <!-- Close Button -->
+                            <button class="closePopup" onclick="closePopup()">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </button>
+                            <div class="popup-content">
+                                <img alt="Logo" class="header-logo" loading="lazy" width="120" height="40" decoding="async" data-nimg="1" style="color:transparent" src="images/expedia.png">
+                                <p>Talk to a travel expert and Save 25%</p>
+                                <h2 class="support-no">
+                                    <i class="fas fa-headset"></i> (888) 441-8506
+                                </h2>
+                                <hr>
+                                <h5>24/7 Reservation Support</h5>
+                                <div class="row justify-content-center">
+                                    <div class="col-6 align-self-center"><img alt="Logo" class="" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto" sizes="100vw" src="images/left-man.jpg"></div>
+                                    <div class="col-6">
+                                        <ul class="arrow-list">
+                                            <li>Tickets Booking</li>
+                                            <li>Manage Booking</li>
+                                            <li>Customer Service</li>
+                                            <li>Cancellation & Refunds</li>
+                                            <li>Quick & Easy Changes/Rebook</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-3 call-offers">
+                                        <img src="images/cal2.gif" style="width:50px; height:50px">
+                                        <div>
+                                            <p class="mb-0">Call Us &amp; get Upto <small>40%OFF</small> on Flights</p>
+                                            <h4 class="mb-0">(888) 441-8506</h4>
+                                        </div>
+                                    </div>
                                 </div>
-                             </div>
-                          </div>
-                       </div>
+                            </div>
+                        </div>
                     </div>
-                 </div>
-              </div>
-           </div>
+                </div>
+            </div>
         </a>
-         </div>
-        
+    </div>
 
+    <style>
+        .closePopup {
+            position: absolute;
+            top: 30px;
+            right: 34px;
+            background-color: transparent;
+            color: #000; /* Adjust color as needed */
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 20;
+        }
+    
+        .closePopup i {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    
+        .closePopup:hover {
+            color: #f00; /* Optional hover effect */
+        }
+    </style>
 
-
-
+<script>
+    function closePopup() {
+        var popup = document.getElementById("boxes");
+        popup.style.display = "none";
+    }
+</script>
 
     <style>
         .d-lg-none {
@@ -3326,28 +3347,7 @@ Las Vegas, NV 89144, USA
 
 
 
-<style>
-    .closePopup {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background-color: transparent;
-        color: #0a3788; /* Match your UI color */
-        border: none;
-        font-size: 24px;
-        cursor: pointer;
-        z-index: 20;
-    }
 
-    .closePopup i {
-        font-size: 24px;
-        font-weight: bold;
-    }
-
-    .closePopup:hover {
-        color: #f00; /* Optional hover effect */
-    }
-</style>
 <style>
     .image-slider-section .swiper {
       width: 100%;
