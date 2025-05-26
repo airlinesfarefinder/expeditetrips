@@ -6,28 +6,32 @@
 <head>
     <title>Expedite Trips</title>
     <meta charset="utf-8">
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/dsnp-csadd.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/jquery.min.js"></script>
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NPTPPCZJ');</script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NPTPPCZJ');</script>
     <!-- End Google Tag Manager -->
-    
+
 
 
 
@@ -40,7 +44,7 @@
             script.src = 'https://emrld.cc/NDA2MjEx.js?t=406211';
             document.head.appendChild(script);
         })();
-      </script>
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16751523481"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -79,8 +83,8 @@
     <!-- Event snippet for mobile conversion conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
         function gtag_report_conversion(url) {
-            var callback = function() {
-                if (typeof(url) != 'undefined') {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
                     window.location = url;
                 }
             };
@@ -153,282 +157,344 @@
 <body>
     <style>
         section.banners {
-          display: none;
-      } 
-      .banners {
-          background-color: #fff;
-          padding: 15px 5px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-      }
-      .bannerInner {
-          background-color: rgba(255,255,255,0.5);
-          width: 100%;
-          padding: 0 0px 0 0px;
-          text-align: center;
-      }
-      .ringing_phone {
-          animation-name: trin;
-          animation-duration: 1.5s;
-          animation-iteration-count: infinite;
-          animation-timing-function: linear;
-      }
-          .ringing_phone {
-          border: solid 5px #e6effe;
-          border-radius: 50%;
-          height: 60px;
-          width: 60px;
-          background: url(../cm-reservation/images/phoneRotate.png) center center no-repeat;
-          text-align: center;
-          display: inline-block;
-          background-size: 28px;
-      }
-      .clickFull {
-          position: relative;
-      }
-      .clickFull a.ddka {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          left: 0;
-          top: 0;
-      }
-      .airLineimg {
-          margin: 0px 0 5px 0;
-          display: inline-block;
-          width: 100%;
-      }
-      .airLineimg img {
-          width: 100%;
-          margin: 0px 0px;
-      }
-      .bannerInner h1 {
-          color: #191e3b;
-          font-size: 18px;
-          font-weight: 500;
-          margin:4px 0 4px 0;    
-          font-family: 'Fira Sans', sans-serif;
-      }
-      .airlineLlogos {
-          text-align: center;
-          margin-bottom: 10px;
-      }
-      .airlineLlogos img {
-         width: 100%;
-         margin: 0px 0px;
-      }
-      .banners .bannerInner ul {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          border-bottom: 2px solid #1a3e6e;
-          padding-bottom: 4px;
-          margin-bottom: 20px;
-          margin-top: 20px;
-      }
-      .banners .bannerInner ul {
-          border-bottom: 2px solid #e01933;
-          padding: 0px;
-          list-style: none;
-      }
-      .banners .bannerInner ul li {
-          color: #000;
-          font-size: 14px;
-          background-image: url(../cm-reservation/images/checkIcons.png);
-          background-repeat: no-repeat;
-          background-position: left center;
-          padding-left: 18px;
-          font-weight: 500;
-          margin: 0;
-          font-family: 'Fira Sans', sans-serif;
-      }
-      .bannerInner h2 {
-          margin: 0;
-          padding: 0;
-          font-weight: 500;
-          font-size: 18px;
-      }
-      .bannerInner .numbers {
-          background: #00308D;
-          border: 0;
-          margin-top: 5px;
-          padding: 3px;
-          background-color: #00308D;
-          position: relative;
-      }
-      .bannerInner .clickFull .numbers {
-          border-radius: 50px;
-      }
-      .bannerInner .numbers a {
-          color: #191e3b;
-          font-size: 27px;
-          font-weight: 600;
-          padding: 0 5px 0 5px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-family: 'Fira Sans', sans-serif;
-      }
+            display: none;
+        }
+
+        .banners {
+            background-color: #fff;
+            padding: 15px 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bannerInner {
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 100%;
+            padding: 0 0px 0 0px;
+            text-align: center;
+        }
+
+        .ringing_phone {
+            animation-name: trin;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .ringing_phone {
+            border: solid 5px #e6effe;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            background: url(../cm-reservation/images/phoneRotate.png) center center no-repeat;
+            text-align: center;
+            display: inline-block;
+            background-size: 28px;
+        }
+
+        .clickFull {
+            position: relative;
+        }
+
+        .clickFull a.ddka {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .airLineimg {
+            margin: 0px 0 5px 0;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .airLineimg img {
+            width: 100%;
+            margin: 0px 0px;
+        }
+
+        .bannerInner h1 {
+            color: #191e3b;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 4px 0 4px 0;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        .airlineLlogos {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .airlineLlogos img {
+            width: 100%;
+            margin: 0px 0px;
+        }
+
+        .banners .bannerInner ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #1a3e6e;
+            padding-bottom: 4px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .banners .bannerInner ul {
+            border-bottom: 2px solid #e01933;
+            padding: 0px;
+            list-style: none;
+        }
+
+        .banners .bannerInner ul li {
+            color: #000;
+            font-size: 14px;
+            background-image: url(../cm-reservation/images/checkIcons.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 18px;
+            font-weight: 500;
+            margin: 0;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        .bannerInner h2 {
+            margin: 0;
+            padding: 0;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .bannerInner .numbers {
+            background: #00308D;
+            border: 0;
+            margin-top: 5px;
+            padding: 3px;
+            background-color: #00308D;
+            position: relative;
+        }
+
+        .bannerInner .clickFull .numbers {
+            border-radius: 50px;
+        }
+
+        .bannerInner .numbers a {
+            color: #191e3b;
+            font-size: 27px;
+            font-weight: 600;
+            padding: 0 5px 0 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
         span.nbrs {
-          text-align: left;
-          color: #faf8fd;font-size: 25px;
-      }  
-      .bannerInner .numbers a span.nbrs small {
-          font-size: 15px;
-          display: block;
-          text-align: left;
-          font-weight: 500;
-          position: relative;
-          top: 3px;color: #f4f7f6;
-          font-family: 'Fira Sans', sans-serif;
-      }
-      .bannerInner hr {
-          border-color: rgb(46 46 46 / 30%);
-          margin: 20px 0 5px 0;
-      }
-      
-      hr {
-          margin-top: 20px;
-          margin-bottom: 20px;
-          border: 0;
-          border-top: 1px solid #eee;
-      }
-      
-      .airLineimg h1 {
-          color: #fdfdfd;
-          font-size: 19px;
-          font-weight: 500;
-          margin: 0px 0px;
-          font-family: 'Fira Sans', sans-serif;
-          background: #00308D;
-          padding: 11px 0px;
-      }
-      
-      .girlCalling {
-          margin-top: 10px;
-          margin-bottom: 11px;
-          position: relative;
-      }
-      .girlCalling img {
-          border-radius: 50%;
-          border: solid 4px #0f4ab5;
-      }
-      .bannerInner h2 a {
-          color: #e01933;
-          font-size: 20px;
-          font-family: 'Fira Sans', sans-serif;
-      }
-      .bannerInner h2 p {
-          margin: 10px 0px!important;
-              font-size: 18px;
-          font-weight: 400;
-          font-family: 'Fira Sans', sans-serif;
-          color:#000;
-      }
-      .blink {animation: blinker 1.3s linear infinite;}
-      
-      .bannerInner h1 span a {
-          line-height: 29px;
-          color: #191e3b;
-          font-size: 17px;
-      }
-      .bannerInner h1 span {
-          color: #191e3b;
-          font-size: 18px;
-          font-weight: 600;
-          margin: 0 0 20px 0;
-          font-family: 'Fira Sans', sans-serif;
-          background: #f58c14;
-          padding: 8px 12px;
-          border-radius: 15px;
-      }
-      .dss-call2 {
-          margin: 15px 20px;
-          font-size: 18px;
-          font-weight: 600;
-          font-family: 'Fira Sans', sans-serif;
-      }
-      .dss-call2 a {
-          color: #000;
-      }
-      ul.list-view-items1 {
-          list-style-type: none;
-          display: flex;
-          flex-wrap: wrap;
-          padding: 0;
-          justify-content: space-between;
-          border-bottom: 0px solid #e01933!important;
-          margin-bottom: 3px!important;
-          margin-top: 2px!important;
-      }
-      ul.list-view-items1 li {
-          color: #fff!important;
-          width: 49%;
-          text-align: center;
-          font-size: 16px!important;
-          line-height: 26px;
-          font-weight: 400!important;
-          background: #0f4ab5!important;
-          margin-bottom: 18px!important;
-          padding: 5px 0px;
-          border-radius: 4px;
-          font-family: 'Fira Sans', sans-serif;
-      }
-      p.mt-3.tt_btm {
-          color: #000;
-          font-size: 16px;
-          font-family: 'Fira Sans', sans-serif;
-          font-weight: 600;
-          line-height: 28px;
-          text-align: center;
-      }
-      
-      @keyframes blinker {50% {opacity: 0;}}
-      
-      @keyframes trin {
-          from {
-              transform:rotate3d(0, 0, 1, 0deg);
-          }
-          20%, 32%, 44%, 56%, 68% {
-              transform: rotate3d(0, 0, 1, 0deg);
-          }
-          23%, 35%, 47%, 59%, 71% {
-              transform: rotate3d(0,0,1,15deg);
-          }
-          26%, 38%, 50%, 62%, 74% {
-              transform: rotate3d(0,0,1,0deg);
-          }
-          29%, 41%, 53%, 65%, 77% {
-              transform: rotate3d(0,0,1,-15deg);
-          }
-          80% {
-              transform:rotate3d(0, 0, 1, 0deg);
-          }
-      }
-      
-      @media (min-width:320px) and (max-width:767px){
-           section.banners {display: block;margin-top: 0px;padding: 0px;}
-          
-      }    
-      
-      
-      </style>
+            text-align: left;
+            color: #faf8fd;
+            font-size: 25px;
+        }
+
+        .bannerInner .numbers a span.nbrs small {
+            font-size: 15px;
+            display: block;
+            text-align: left;
+            font-weight: 500;
+            position: relative;
+            top: 3px;
+            color: #f4f7f6;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        .bannerInner hr {
+            border-color: rgb(46 46 46 / 30%);
+            margin: 20px 0 5px 0;
+        }
+
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+
+        .airLineimg h1 {
+            color: #fdfdfd;
+            font-size: 19px;
+            font-weight: 500;
+            margin: 0px 0px;
+            font-family: 'Fira Sans', sans-serif;
+            background: #00308D;
+            padding: 11px 0px;
+        }
+
+        .girlCalling {
+            margin-top: 10px;
+            margin-bottom: 11px;
+            position: relative;
+        }
+
+        .girlCalling img {
+            border-radius: 50%;
+            border: solid 4px #0f4ab5;
+        }
+
+        .bannerInner h2 a {
+            color: #e01933;
+            font-size: 20px;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        .bannerInner h2 p {
+            margin: 10px 0px !important;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'Fira Sans', sans-serif;
+            color: #000;
+        }
+
+        .blink {
+            animation: blinker 1.3s linear infinite;
+        }
+
+        .bannerInner h1 span a {
+            line-height: 29px;
+            color: #191e3b;
+            font-size: 17px;
+        }
+
+        .bannerInner h1 span {
+            color: #191e3b;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 20px 0;
+            font-family: 'Fira Sans', sans-serif;
+            background: #f58c14;
+            padding: 8px 12px;
+            border-radius: 15px;
+        }
+
+        .dss-call2 {
+            margin: 15px 20px;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        .dss-call2 a {
+            color: #000;
+        }
+
+        ul.list-view-items1 {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            justify-content: space-between;
+            border-bottom: 0px solid #e01933 !important;
+            margin-bottom: 3px !important;
+            margin-top: 2px !important;
+        }
+
+        ul.list-view-items1 li {
+            color: #fff !important;
+            width: 49%;
+            text-align: center;
+            font-size: 16px !important;
+            line-height: 26px;
+            font-weight: 400 !important;
+            background: #0f4ab5 !important;
+            margin-bottom: 18px !important;
+            padding: 5px 0px;
+            border-radius: 4px;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        p.mt-3.tt_btm {
+            color: #000;
+            font-size: 16px;
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: 600;
+            line-height: 28px;
+            text-align: center;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes trin {
+            from {
+                transform: rotate3d(0, 0, 1, 0deg);
+            }
+
+            20%,
+            32%,
+            44%,
+            56%,
+            68% {
+                transform: rotate3d(0, 0, 1, 0deg);
+            }
+
+            23%,
+            35%,
+            47%,
+            59%,
+            71% {
+                transform: rotate3d(0, 0, 1, 15deg);
+            }
+
+            26%,
+            38%,
+            50%,
+            62%,
+            74% {
+                transform: rotate3d(0, 0, 1, 0deg);
+            }
+
+            29%,
+            41%,
+            53%,
+            65%,
+            77% {
+                transform: rotate3d(0, 0, 1, -15deg);
+            }
+
+            80% {
+                transform: rotate3d(0, 0, 1, 0deg);
+            }
+        }
+
+        @media (min-width:320px) and (max-width:767px) {
+            section.banners {
+                display: block;
+                margin-top: 0px;
+                padding: 0px;
+            }
+
+        }
+    </style>
 
 
     <nav class="navbar">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="https://expeditetrips.com/"><img src="images/logo.png" class="logo"></a>
             </div>
 
             <div class="callnow_mm">
-                <a href="tel: (888) 441-8506">
+                <a href="tel: (888) 519-5331">
                     <div class="hdrtxt"><i class="fa fa-headphones "></i> Call </div>
                 </a>
             </div>
@@ -442,7 +508,8 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <div class="tollfree">
-                        <a href="tel: (888) 441-8506"><span>Call 24/7 for our best deals</span><img src="images/phone01.png">  (888) 441-8506 </a>
+                        <a href="tel: (888) 519-5331"><span>Call 24/7 for our best deals</span><img
+                                src="images/phone01.png"> (888) 519-5331 </a>
                     </div>
                 </ul>
             </div>
@@ -452,12 +519,12 @@
     <section class="banners">
         <div class="bannerInner">
             <div class="clickFull">
-                 <a href="tel:(888) 441-8506" class="ddka"></a>
-        <div class="airLineimg">
-            <h1 class="blink1">Expedia Reservations Desk</h1>
-            <img src="images/Generic-Banner1.png">
-        </div>
-        <!--<a href="tel:(888) 441-8506">
+                <a href="tel:(888) 519-5331" class="ddka"></a>
+                <div class="airLineimg">
+                    <h1 class="blink1">Expedia Reservations Desk</h1>
+                    <img src="images/Generic-Banner1.png">
+                </div>
+                <!--<a href="tel:(888) 519-5331">
         <ul class="list-view-items1">
                       <li> New Bookings</li>
                       <li> Changes </li>
@@ -466,37 +533,41 @@
                       <li> Refunds </li>
                       <li> Upgrades </li>
         </ul></a>-->
-        <h1><span><a href="tel:(888) 441-8506">New Bookings | Changes | Cancellations <!--| Refunds | Upgrades--></a></span></h1>
-      <!--  <div class="airlineLlogos">
+                <h1><span><a href="tel:(888) 519-5331">New Bookings | Changes | Cancellations
+                            <!--| Refunds | Upgrades--></a></span></h1>
+                <!--  <div class="airlineLlogos">
             <img src="images/airline-gnric-pullu.png">
         </div>
-        <div class="dss-call2"><a href="tel:(888) 441-8506">Booking &amp; Changes Over The Phone</a></div>
+        <div class="dss-call2"><a href="tel:(888) 519-5331">Booking &amp; Changes Over The Phone</a></div>
 
             <ul>
                 <li>Flexible payment</li>
                 <li>Price match guarantee</li>
             </ul>
-            <a href="tel:(888) 441-8506" id="girlIconCallEvent">
+            <a href="tel:(888) 519-5331" id="girlIconCallEvent">
            <div class="girlCalling">
                
                    <img src="images/calling-cus.png">
               
             </div> </a>-->
-            <h2><p><b>No Hold - Call Answered in 5 Sec</b></p>
-                <b><a href="tel:(888) 441-8506" id="ClickToCallEvent" class="blink">Click to Call !</a></b>
-            </h2>
-            <div class="numbers">
-                <a href="tel:(888) 441-8506">
-                    <span class="ringing_phone">
-                        <img src="images/phone-icon.gif" alt="Phone Icon" style="width: 28px; height: 28px;"> <!-- Add the image here -->
-                    </span>
-                    <span class="nbrs"><small>Unpublished Phone-Only Offers</small> (888) 441-8506</span>
-                </a>
-            </div>
-            <p class="mt-3 tt_btm">Call Our Airline Booking Experts and Save Up to 60% on Domestic and Up to 50% on International Flight Booking</p>
+                <h2>
+                    <p><b>No Hold - Call Answered in 5 Sec</b></p>
+                    <b><a href="tel:(888) 519-5331" id="ClickToCallEvent" class="blink">Click to Call !</a></b>
+                </h2>
+                <div class="numbers">
+                    <a href="tel:(888) 519-5331">
+                        <span class="ringing_phone">
+                            <img src="images/phone-icon.gif" alt="Phone Icon" style="width: 28px; height: 28px;">
+                            <!-- Add the image here -->
+                        </span>
+                        <span class="nbrs"><small>Unpublished Phone-Only Offers</small> (888) 519-5331</span>
+                    </a>
+                </div>
+                <p class="mt-3 tt_btm">Call Our Airline Booking Experts and Save Up to 60% on Domestic and Up to 50% on
+                    International Flight Booking</p>
             </div>
             <hr>
-          
+
         </div>
     </section>
 
@@ -511,8 +582,9 @@
                 <div class="col-md-12">
                     <div class="hgdft_head">
                         <h1> Book Now. Enjoy Your Trip Later. </h1>
-                          
-                                                  <h2> <i class="fa fa-phone"></i> For Phone-only Flight Deals, Call <a href="tel: (888) 441-8506">  (888) 441-8506 </a> </h2>
+
+                        <h2> <i class="fa fa-phone"></i> For Phone-only Flight Deals, Call <a
+                                href="tel: (888) 519-5331"> (888) 519-5331 </a> </h2>
                     </div>
                     <link rel="stylesheet" type="text/css" href="Searchform/css/style.css">
                     <script src="Searchform/js/jquery.min.js"></script>
@@ -526,13 +598,16 @@
                                         <div class="flight_type">
                                             <div class="form-check-inline">
                                                 <label class="radio-inline customradio">Round Trip
-                     <input type="radio" checked="checked" onClick="show_date(this.value)" value="roundtrip" name="tripType">
-                     <span class="checkmark"></span>
-                     </label>
+                                                    <input type="radio" checked="checked"
+                                                        onClick="show_date(this.value)" value="roundtrip"
+                                                        name="tripType">
+                                                    <span class="checkmark"></span>
+                                                </label>
                                                 <label class="radio-inline customradio">One Way
-                     <input type="radio" onClick="show_date(this.value)" value="oneway" name="tripType">
-                     <span class="checkmark"></span>
-                     </label>
+                                                    <input type="radio" onClick="show_date(this.value)" value="oneway"
+                                                        name="tripType">
+                                                    <span class="checkmark"></span>
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
@@ -542,16 +617,24 @@
                                     <div class="rsts ffrms_ppd">
                                         <div class="res_hh"> From </div>
                                         <div class="form-group dst_date">
-                                            <label class="frm_llbs"> <img src="Searchform/images/se_dep_icon.svg"> </label>
-                                            <input type="text" required="required" class="form-control ipt1 location-fld serlocation fromshort" autocomplete="off" placeholder="City or airport" name="origin1" id="location" onclick="clearInput2()">
+                                            <label class="frm_llbs"> <img src="Searchform/images/se_dep_icon.svg">
+                                            </label>
+                                            <input type="text" required="required"
+                                                class="form-control ipt1 location-fld serlocation fromshort"
+                                                autocomplete="off" placeholder="City or airport" name="origin1"
+                                                id="location" onclick="clearInput2()">
                                             <p class="fromfull"> City Name </p>
                                         </div>
                                     </div>
                                     <div class="rsts ffrms_ppd">
                                         <div class="res_hh"> To </div>
                                         <div class="form-group dst_date">
-                                            <label class="frm_llbs"> <img src="Searchform/images/se_arrival_icon.svg"> </label>
-                                            <input required="required" type="text" class="form-control ipt1 location-fld serlocation toshort" placeholder="City or airport" name="destination1" autocomplete="off" id="location2" onclick="clearInput()">
+                                            <label class="frm_llbs"> <img src="Searchform/images/se_arrival_icon.svg">
+                                            </label>
+                                            <input required="required" type="text"
+                                                class="form-control ipt1 location-fld serlocation toshort"
+                                                placeholder="City or airport" name="destination1" autocomplete="off"
+                                                id="location2" onclick="clearInput()">
                                             <p class="tofull"> City Name </p>
                                         </div>
                                     </div>
@@ -559,9 +642,13 @@
                                         <div class="mnbd_rres">
                                             <div class="res_hh"> Departure Date </div>
                                             <div class="form-group dst_date">
-                                                <label class="frm_llbs"> <img src="Searchform/images/se_calender_icon.svg" style="width: 20px;"> </label>
+                                                <label class="frm_llbs"> <img
+                                                        src="Searchform/images/se_calender_icon.svg"
+                                                        style="width: 20px;"> </label>
                                                 <input id="depDt" name="departDate1" type="hidden" value=''>
-                                                <input type="text" class="form-control ipt1 readtrue" id="datepicker" required="required" autocomplete="off" placeholder="Depart" name="departDate1" readonly="true" value=''>
+                                                <input type="text" class="form-control ipt1 readtrue" id="datepicker"
+                                                    required="required" autocomplete="off" placeholder="Depart"
+                                                    name="departDate1" readonly="true" value=''>
                                                 <p id='datepicker_label'> Select Day </p>
                                             </div>
                                         </div>
@@ -582,9 +669,13 @@
                                         <div class="mnbd_rres">
                                             <div class="res_hh"> Return Date </div>
                                             <div class="form-group dst_date">
-                                                <label class="frm_llbs"> <img src="Searchform/images/se_calender_icon.svg" style="width: 20px;"> </label>
+                                                <label class="frm_llbs"> <img
+                                                        src="Searchform/images/se_calender_icon.svg"
+                                                        style="width: 20px;"> </label>
                                                 <input id="retDt" name="returnDate1" type="hidden" value=''>
-                                                <input type="text" autocomplete="off" class="form-control ipt1 readtrue" required="required" id="datepicker2" placeholder="Return" name="returnDate1" readonly="true" value=''>
+                                                <input type="text" autocomplete="off" class="form-control ipt1 readtrue"
+                                                    required="required" id="datepicker2" placeholder="Return"
+                                                    name="returnDate1" readonly="true" value=''>
                                                 <p id='datepicker2_label'> Select Day </p>
                                             </div>
                                         </div>
@@ -593,8 +684,10 @@
                                         <div class="hdfggf">
                                             <div class="res_hh"> TRAVELLERS & CLASS </div>
                                             <div class="form-group dst_date">
-                                                <label class="frm_llbs"> <img src="Searchform/images/se_psng_icon.svg" style="width: 20px;"> </label>
-                                                <input type="text" class="form-control ipt1 readtrue" placeholder="Passengers 1" name="" id="btm_clk" readonly="true">
+                                                <label class="frm_llbs"> <img src="Searchform/images/se_psng_icon.svg"
+                                                        style="width: 20px;"> </label>
+                                                <input type="text" class="form-control ipt1 readtrue"
+                                                    placeholder="Passengers 1" name="" id="btm_clk" readonly="true">
                                                 <div class="psg_dls" style="display: none;">
                                                     <div class="row">
                                                         <div class="col-sm-5 col-4">
@@ -606,12 +699,18 @@
                                                             <div class="pass_bx">
                                                                 <div class="input-group number-spinner">
                                                                     <span class="input-group-btn">
-                                    <a class="btn mns_btn" data-dir="dwn" onclick="decrease_adult_rt()"><i class="fa fa-minus"></i></a>
-                                    </span>
-                                                                    <input type="text" id="AdultsRT" class="form-control text-center add_num" name="adults" value="1">
+                                                                        <a class="btn mns_btn" data-dir="dwn"
+                                                                            onclick="decrease_adult_rt()"><i
+                                                                                class="fa fa-minus"></i></a>
+                                                                    </span>
+                                                                    <input type="text" id="AdultsRT"
+                                                                        class="form-control text-center add_num"
+                                                                        name="adults" value="1">
                                                                     <span class="input-group-btn">
-                                    <a class="btn add_btn" data-dir="up" onclick="increase_adult_rt()"><i class="fa fa-plus"></i></a>
-                                    </span>
+                                                                        <a class="btn add_btn" data-dir="up"
+                                                                            onclick="increase_adult_rt()"><i
+                                                                                class="fa fa-plus"></i></a>
+                                                                    </span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -626,12 +725,18 @@
                                                             <div class="pass_bx">
                                                                 <div class="input-group number-spinner">
                                                                     <span class="input-group-btn">
-                                    <a class="btn mns_btn" data-dir="dwn" onclick="decrease_child_rt()"><i class="fa fa-minus"></i></a>
-                                    </span>
-                                                                    <input type="text" id="ChildrenRT" class="form-control text-center add_num" name="childs" value="0">
+                                                                        <a class="btn mns_btn" data-dir="dwn"
+                                                                            onclick="decrease_child_rt()"><i
+                                                                                class="fa fa-minus"></i></a>
+                                                                    </span>
+                                                                    <input type="text" id="ChildrenRT"
+                                                                        class="form-control text-center add_num"
+                                                                        name="childs" value="0">
                                                                     <span class="input-group-btn">
-                                    <a class="btn add_btn" data-dir="up" onclick="increase_child_rt()"><i class="fa fa-plus"></i></a>
-                                    </span>
+                                                                        <a class="btn add_btn" data-dir="up"
+                                                                            onclick="increase_child_rt()"><i
+                                                                                class="fa fa-plus"></i></a>
+                                                                    </span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -646,12 +751,18 @@
                                                             <div class="pass_bx">
                                                                 <div class="input-group number-spinner">
                                                                     <span class="input-group-btn">
-                                    <a class="btn mns_btn" data-dir="dwn" onclick="decrease_infant_rt()"><i class="fa fa-minus" ></i></a>
-                                    </span>
-                                                                    <input type="text" class="form-control text-center add_num" id="InfantsRT" name="infants" value="0">
+                                                                        <a class="btn mns_btn" data-dir="dwn"
+                                                                            onclick="decrease_infant_rt()"><i
+                                                                                class="fa fa-minus"></i></a>
+                                                                    </span>
+                                                                    <input type="text"
+                                                                        class="form-control text-center add_num"
+                                                                        id="InfantsRT" name="infants" value="0">
                                                                     <span class="input-group-btn">
-                                    <a class="btn add_btn" data-dir="up" onclick="increase_infant_rt()"><i class="fa fa-plus"></i></a>
-                                    </span>
+                                                                        <a class="btn add_btn" data-dir="up"
+                                                                            onclick="increase_infant_rt()"><i
+                                                                                class="fa fa-plus"></i></a>
+                                                                    </span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -659,18 +770,21 @@
                                                     <div class="bncfr_ccrty">
                                                         <div class="col-md-12 col-xs-12 ffrms_ppd">
                                                             <div class="form-group" style="margin: 0;">
-                                                                <select class="form-control Nhgsdrt" id="classType" name="classType" placeholder="Economy">
-                                    <option selected="selected" value="Y">Economy</option>
-                                    <option value="S"> Premium Economy </option>
-                                    <option value="C"> Business Class </option>
-                                    <option value="F"> First Class </option>
-                                 </select>
+                                                                <select class="form-control Nhgsdrt" id="classType"
+                                                                    name="classType" placeholder="Economy">
+                                                                    <option selected="selected" value="Y">Economy
+                                                                    </option>
+                                                                    <option value="S"> Premium Economy </option>
+                                                                    <option value="C"> Business Class </option>
+                                                                    <option value="F"> First Class </option>
+                                                                </select>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-12 col-xs-6">
                                                         <div class="btn_dn">
-                                                            <button type="button" onclick="all_pesenger();" class="btn_done">Done</button>
+                                                            <button type="button" onclick="all_pesenger();"
+                                                                class="btn_done">Done</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -718,13 +832,13 @@
                             return curr_date + "-" + curr_month + "-" + curr_year;
                         }
 
-                        jQuery(function($) {
+                        jQuery(function ($) {
                             $("#datepicker").datepicker({
                                 minDate: 'D',
                                 dateFormat: "yy-mm-dd",
                                 // defaultDate: "+1w",
                                 numberOfMonths: Resolution(),
-                                onClose: function(selectedDate) {
+                                onClose: function (selectedDate) {
                                     var s = selectedDate.split('-');
 
                                     $("#datepicker2").datepicker("option", "minDate", selectedDate);
@@ -734,13 +848,13 @@
                             });
                         });
 
-                        jQuery(function($) {
+                        jQuery(function ($) {
                             $("#datepicker2").datepicker({
                                 minDate: '+1D',
                                 dateFormat: "yy-mm-dd",
                                 // defaultDate: "+1w",
                                 numberOfMonths: Resolution(),
-                                onClose: function(selectedDate) {
+                                onClose: function (selectedDate) {
                                     var s = selectedDate.split('-');
                                     $('#datepicker2').val(d_dat);
                                     $('#datepicker2_label').html(s[1] + '-' + s[3]);
@@ -750,13 +864,13 @@
                         });
                     </script>
                     <script>
-                        jQuery(function($) {
+                        jQuery(function ($) {
                             $("#datepickerH").datepicker({
                                 minDate: 'D',
                                 dateFormat: "dd-m-yy",
                                 // defaultDate: "+1w",
                                 numberOfMonths: Resolution(),
-                                onClose: function(selectedDate) {
+                                onClose: function (selectedDate) {
                                     $('#depdth').val(selectedDate);
                                     $('#datepickerH').val(selectedDate);
                                     $("#datepickerH2").datepicker("option", "minDate", selectedDate);
@@ -768,13 +882,13 @@
 
 
 
-                        jQuery(function($) {
+                        jQuery(function ($) {
                             $("#datepickerH11").datepicker({
                                 minDate: 'D',
                                 dateFormat: "M-D-dd-yy",
                                 // defaultDate: "+1w",
                                 numberOfMonths: Resolution(),
-                                onClose: function(selectedDate) {
+                                onClose: function (selectedDate) {
                                     alert(selectedDate);
                                     var s = selectedDate.split('-');
                                     var depdate = s[0] + '-' + s[2] + '-' + s[3];
@@ -789,13 +903,13 @@
                             });
                         });
 
-                        jQuery(function($) {
+                        jQuery(function ($) {
                             $("#datepickerH2").datepicker({
                                 minDate: '+1D',
                                 dateFormat: "dd-m-yy",
                                 // defaultDate: "+1w",
                                 numberOfMonths: Resolution(),
-                                onClose: function(selectedDate) {
+                                onClose: function (selectedDate) {
 
                                     $('#retdth').val(selectedDate);
 
@@ -806,13 +920,13 @@
                         });
                     </script>
                     <script>
-                        jQuery(function($) {
+                        jQuery(function ($) {
                             $("#datepicker_car").datepicker({
                                 minDate: 'D',
                                 dateFormat: "M-D-dd-yy",
                                 // defaultDate: "+1w",
                                 numberOfMonths: Resolution(),
-                                onClose: function(selectedDate) {
+                                onClose: function (selectedDate) {
                                     var s = selectedDate.split('-');
                                     var depdate = s[0] + '-' + s[2] + '-' + s[3];
                                     $('#depDt').val(depdate);
@@ -826,13 +940,13 @@
                             });
                         });
 
-                        jQuery(function($) {
+                        jQuery(function ($) {
                             $("#datepicker_car2").datepicker({
                                 minDate: '+1D',
                                 dateFormat: "M-D-dd-yy",
                                 // defaultDate: "+1w",
                                 numberOfMonths: Resolution(),
-                                onClose: function(selectedDate) {
+                                onClose: function (selectedDate) {
                                     var s = selectedDate.split('-');
                                     var depdate = s[0] + '-' + s[2] + '-' + s[3];
                                     $('#retDt').val(depdate);
@@ -857,11 +971,11 @@
                         }
                     </script>
                     <script type="text/javascript">
-                        $(document).ready(function() {
-                            $("#btm_clk").click(function() {
+                        $(document).ready(function () {
+                            $("#btm_clk").click(function () {
                                 $(".psg_dls").toggle('slideUp');
                             });
-                            $(".btn_done").click(function() {
+                            $(".btn_done").click(function () {
 
                                 var total = all_pesenger();
                                 var classType = $("#classType").val();
@@ -883,11 +997,11 @@
                         });
                     </script>
                     <script type="text/javascript">
-                        $(document).ready(function() {
-                            $("#btm_clkH").click(function() {
+                        $(document).ready(function () {
+                            $("#btm_clkH").click(function () {
                                 $(".psg_dls").toggle('slideUp');
                             });
-                            $(".btn_doneH").click(function() {
+                            $(".btn_doneH").click(function () {
 
                                 var total = all_pesenger();
                                 $("#btm_clkH").val('Adults/child ' + total);
@@ -911,9 +1025,9 @@
                         }
                     </script>
                     <script>
-                        jQuery(function($) {
+                        jQuery(function ($) {
 
-                            $('input').focus(function() {
+                            $('input').focus(function () {
                                 $(this).removeAttr('placeholder');
                             });
 
@@ -935,11 +1049,11 @@
                         }
                     </script>
                     <script>
-                        jQuery(function($) {
+                        jQuery(function ($) {
                             //alert("hiiii");
                             var arr = [];
-                            $.getJSON('airport.json', function(data) {
-                                $.each(data, function(key, value) {
+                            $.getJSON('airport.json', function (data) {
+                                $.each(data, function (key, value) {
                                     //alert(value);
                                     var codes = value.substring(0, 3);
                                     //alert(codes);
@@ -950,7 +1064,7 @@
                             });
                             //console.log(arr);
                             $("#location").autocomplete({
-                                source: function(request, response) {
+                                source: function (request, response) {
                                     var stringLength = $.ui.autocomplete.escapeRegex(request.term).length;
                                     //alert(stringLength);
                                     var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(request.term), "i");
@@ -958,66 +1072,8 @@
 
                                     //alert(matcher);
                                     var isData = 1;
-                                    response($.grep(arr, function(item) {
+                                    response($.grep(arr, function (item) {
 
-                                        //alert(item);
-                                        //alert(matcher.test( item ));
-
-                                        if (stringLength <= 3)
-
-                                        {
-                                            if (matcher.test(item)) {
-                                                isData = 22;
-                                            }
-                                            return matcher.test(item);
-
-                                        } else {
-                                            if (matcher2.test(item)) {
-                                                isData = 22;
-                                            }
-                                            return matcher2.test(item);
-                                        }
-
-                                    }));
-                                    //alert(isData);
-                                    if (stringLength == 3 && isData == 1) {
-                                        response($.grep(arr, function(item) {
-                                            //alert(item);
-                                            //alert(matcher.test( item ));
-
-
-                                            return matcher2.test(item);
-
-
-
-                                        }));
-                                    }
-                                },
-                                minLength: 1,
-                                change: function(event, ui) {
-                                    if (ui.item === null) {
-                                        $(this).val('');
-                                        $('#location').val('');
-                                    }
-                                },
-                                select: function(event, ui) {
-                                    // console.log(ui.item.value);
-                                    $('.fromshort').html(ui.item.value.slice(0, 3));
-                                    $('.fromfull').html(ui.item.value.slice(4));
-                                    setTimeout(function() {
-                                        $('#location2').focus();
-                                    }, 1);
-                                }
-                            });
-
-                            $("#location2").autocomplete({
-                                source: function(request, response) {
-                                    var stringLength = $.ui.autocomplete.escapeRegex(request.term).length;
-                                    //alert(stringLength);
-                                    var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(request.term), "i");
-                                    var matcher2 = new RegExp($.ui.autocomplete.escapeRegex(request.term) + "+", "i");
-                                    var isData = 1;
-                                    response($.grep(arr, function(item) {
                                         //alert(item);
                                         //alert(matcher.test( item ));
 
@@ -1037,7 +1093,7 @@
                                     }));
                                     //alert(isData);
                                     if (stringLength == 3 && isData == 1) {
-                                        response($.grep(arr, function(item) {
+                                        response($.grep(arr, function (item) {
                                             //alert(item);
                                             //alert(matcher.test( item ));
 
@@ -1050,16 +1106,72 @@
                                     }
                                 },
                                 minLength: 1,
-                                change: function(event, ui) {
+                                change: function (event, ui) {
+                                    if (ui.item === null) {
+                                        $(this).val('');
+                                        $('#location').val('');
+                                    }
+                                },
+                                select: function (event, ui) {
+                                    // console.log(ui.item.value);
+                                    $('.fromshort').html(ui.item.value.slice(0, 3));
+                                    $('.fromfull').html(ui.item.value.slice(4));
+                                    setTimeout(function () {
+                                        $('#location2').focus();
+                                    }, 1);
+                                }
+                            });
+
+                            $("#location2").autocomplete({
+                                source: function (request, response) {
+                                    var stringLength = $.ui.autocomplete.escapeRegex(request.term).length;
+                                    //alert(stringLength);
+                                    var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(request.term), "i");
+                                    var matcher2 = new RegExp($.ui.autocomplete.escapeRegex(request.term) + "+", "i");
+                                    var isData = 1;
+                                    response($.grep(arr, function (item) {
+                                        //alert(item);
+                                        //alert(matcher.test( item ));
+
+                                        if (stringLength <= 3) {
+                                            if (matcher.test(item)) {
+                                                isData = 22;
+                                            }
+                                            return matcher.test(item);
+
+                                        } else {
+                                            if (matcher2.test(item)) {
+                                                isData = 22;
+                                            }
+                                            return matcher2.test(item);
+                                        }
+
+                                    }));
+                                    //alert(isData);
+                                    if (stringLength == 3 && isData == 1) {
+                                        response($.grep(arr, function (item) {
+                                            //alert(item);
+                                            //alert(matcher.test( item ));
+
+
+                                            return matcher2.test(item);
+
+
+
+                                        }));
+                                    }
+                                },
+                                minLength: 1,
+                                change: function (event, ui) {
                                     if (ui.item === null) {
                                         $(this).val('');
                                         $('#location2').val('');
                                     }
                                 },
-                                select: function(event, ui) {
+                                select: function (event, ui) {
                                     $('.toshort').html(ui.item.value.slice(0, 3));
                                     $('.tofull').html(ui.item.value.slice(4));
-                                    setTimeout(function() {
+                                    setTimeout(function () {
                                         $('#datepicker').focus();
                                     }, 1);
                                 }
@@ -1185,105 +1297,103 @@
 
 
 
-    
+
     <section class="destinations-carousel">
         <h2>Explore vacation packages to popular destinations</h2>
         <div class="carousel-wrapper">
-          <button class="carousel-btn left" onclick="slideLeft()">
-            <span class="arrow">&#10094;</span>
-          </button>
-      
-          <div class="carousel-track" id="carouselTrack">
-            <div class="dest-card">
-              <img src="/images/capetown.jpg" alt="Cape Town">
-              <div class="dest-info">
-                <div class="dest-city">Cape Town</div>
-                <div class="dest-region">South Africa</div>
-                <div class="dest-price">Avg. nightly price: $210</div>
-              </div>
+            <button class="carousel-btn left" onclick="slideLeft()">
+                <span class="arrow">&#10094;</span>
+            </button>
+
+            <div class="carousel-track" id="carouselTrack">
+                <div class="dest-card">
+                    <img src="/images/capetown.jpg" alt="Cape Town">
+                    <div class="dest-info">
+                        <div class="dest-city">Cape Town</div>
+                        <div class="dest-region">South Africa</div>
+                        <div class="dest-price">Avg. nightly price: $210</div>
+                    </div>
+                </div>
+
+                <div class="dest-card">
+                    <img src="/images/queenstown.jpg" alt="Queenstown">
+                    <div class="dest-info">
+                        <div class="dest-city">Queenstown</div>
+                        <div class="dest-region">New Zealand</div>
+                        <div class="dest-price">Avg. nightly price: $240</div>
+                    </div>
+                </div>
+
+                <div class="dest-card">
+                    <img src="/images/marrkech.jpg" alt="Marrakech">
+                    <div class="dest-info">
+                        <div class="dest-city">Marrakech</div>
+                        <div class="dest-region">Morocco</div>
+                        <div class="dest-price">Avg. nightly price: $160</div>
+                    </div>
+                </div>
+
+                <div class="dest-card">
+                    <img src="/images/reykjavik.jpg" alt="Reykjavik">
+                    <div class="dest-info">
+                        <div class="dest-city">Reykjavik</div>
+                        <div class="dest-region">Iceland</div>
+                        <div class="dest-price">Avg. nightly price: $290</div>
+                    </div>
+                </div>
+
+                <div class="dest-card">
+                    <img src="/images/phuket.jpg" alt="Phuket">
+                    <div class="dest-info">
+                        <div class="dest-city">Phuket</div>
+                        <div class="dest-region">Thailand</div>
+                        <div class="dest-price">Avg. nightly price: $150</div>
+                    </div>
+                </div>
+
+                <div class="dest-card">
+                    <img src="/images/vancouver.jpg" alt="Vancouver">
+                    <div class="dest-info">
+                        <div class="dest-city">Vancouver</div>
+                        <div class="dest-region">British Columbia, Canada</div>
+                        <div class="dest-price">Avg. nightly price: $260</div>
+                    </div>
+                </div>
             </div>
-      
-            <div class="dest-card">
-              <img src="/images/queenstown.jpg" alt="Queenstown">
-              <div class="dest-info">
-                <div class="dest-city">Queenstown</div>
-                <div class="dest-region">New Zealand</div>
-                <div class="dest-price">Avg. nightly price: $240</div>
-              </div>
-            </div>
-      
-            <div class="dest-card">
-              <img src="/images/marrkech.jpg" alt="Marrakech">
-              <div class="dest-info">
-                <div class="dest-city">Marrakech</div>
-                <div class="dest-region">Morocco</div>
-                <div class="dest-price">Avg. nightly price: $160</div>
-              </div>
-            </div>
-      
-            <div class="dest-card">
-              <img src="/images/reykjavik.jpg" alt="Reykjavik">
-              <div class="dest-info">
-                <div class="dest-city">Reykjavik</div>
-                <div class="dest-region">Iceland</div>
-                <div class="dest-price">Avg. nightly price: $290</div>
-              </div>
-            </div>
-      
-            <div class="dest-card">
-              <img src="/images/phuket.jpg" alt="Phuket">
-              <div class="dest-info">
-                <div class="dest-city">Phuket</div>
-                <div class="dest-region">Thailand</div>
-                <div class="dest-price">Avg. nightly price: $150</div>
-              </div>
-            </div>
-      
-            <div class="dest-card">
-              <img src="/images/vancouver.jpg" alt="Vancouver">
-              <div class="dest-info">
-                <div class="dest-city">Vancouver</div>
-                <div class="dest-region">British Columbia, Canada</div>
-                <div class="dest-price">Avg. nightly price: $260</div>
-              </div>
-            </div>
-          </div>
-      
-          <button class="carousel-btn right" onclick="slideRight()">
-            <span class="arrow">&#10095;</span>
-          </button>
+
+            <button class="carousel-btn right" onclick="slideRight()">
+                <span class="arrow">&#10095;</span>
+            </button>
         </div>
-      </section>
-      
-      
-      
-     <section style="position: relative; width: 100%; height: 60vh; overflow: hidden; 
+    </section>
+
+
+
+    <section style="position: relative; width: 100%; height: 60vh; overflow: hidden; 
                  border-radius: 0 2rem 2rem 0; margin: auto; max-width: 100%;">
 
-  <!-- Background Image -->
-  <img src="/images/mid1.jpg" 
-       alt="Traveler on beach at sunset"
-       style="width: 100%; height: 100%; object-fit: cover; border-radius: 0 2rem 2rem 0;">
+        <!-- Background Image -->
+        <img src="/images/mid1.jpg" alt="Traveler on beach at sunset"
+            style="width: 100%; height: 100%; object-fit: cover; border-radius: 0 2rem 2rem 0;">
 
-  <!-- Text Overlay -->
-  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        <!-- Text Overlay -->
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
               color: white; text-align: center; padding: 1rem; background-color: rgba(0, 0, 0, 0.4); 
               border-radius: 1rem; max-width: 90%;">
-    <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Adventure Starts Here</h1>
-    <p style="font-size: 1.2rem; max-width: 600px; margin: auto;">
-        Wake up somewhere new—your global adventure begins now.
-    </p>
-    <a href="#" 
-       style="display: inline-block; margin-top: 1.5rem; padding: 0.75rem 1.5rem; 
+            <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Adventure Starts Here</h1>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: auto;">
+                Wake up somewhere new—your global adventure begins now.
+            </p>
+            <a href="#" style="display: inline-block; margin-top: 1.5rem; padding: 0.75rem 1.5rem; 
               background-color: #0071c2; color: white; text-decoration: none; border-radius: 6px;">
-      Unlock Your Deals
-    </a>
-  </div>
-</section>
+                Unlock Your Deals
+            </a>
+        </div>
+    </section>
 
-      
 
-      <!-- <div class="footer_top">
+
+    <!-- <div class="footer_top">
         <div class="container">
             <div class="row hdgfrt_gh">
                 <div class="col-md-6 lsers_mde" style="background:url(images/banner3.jpg) left top no-repeat; height: 160px;
@@ -1308,96 +1418,94 @@
     <section class="destinations-carousel">
         <h2>Explore vacation packages to popular destinations</h2>
         <div class="carousel-wrapper">
-          <button class="carousel-btn left" onclick="slideLeft()">
-            <span class="arrow">&#10094;</span>
-          </button>
-      
-          <div class="carousel-track" id="carouselTrack">
-            <div class="dest-card">
-              <img src="/images/paris.jpg" alt="Paris">
-              <div class="dest-info">
-                <div class="dest-city">Paris</div>
-                <div class="dest-region">Île-de-France, France</div>
-                <div class="dest-price">Avg. nightly price: $320</div>
-              </div>
-            </div>
-      
-            <div class="dest-card">
-              <img src="/images/tokyo.jpg" alt="Tokyo">
-              <div class="dest-info">
-                <div class="dest-city">Tokyo</div>
-                <div class="dest-region">Japan</div>
-                <div class="dest-price">Avg. nightly price: $270</div>
-              </div>
-            </div>
-      
-            <div class="dest-card">
-              <img src="/images/dubai.jpg" alt="Dubai">
-              <div class="dest-info">
-                <div class="dest-city">Dubai</div>
-                <div class="dest-region">United Arab Emirates</div>
-                <div class="dest-price">Avg. nightly price: $390</div>
-              </div>
-            </div>
-      
-            <div class="dest-card">
-              <img src="/images/rome.jpg" alt="Rome">
-              <div class="dest-info">
-                <div class="dest-city">Rome</div>
-                <div class="dest-region">Italy</div>
-                <div class="dest-price">Avg. nightly price: $250</div>
-              </div>
-            </div>
-      
-            <div class="dest-card">
-              <img src="/images/bangkok.jpg" alt="Bangkok">
-              <div class="dest-info">
-                <div class="dest-city">Bangkok</div>
-                <div class="dest-region">Thailand</div>
-                <div class="dest-price">Avg. nightly price: $180</div>
-              </div>
-            </div>
-      
-            <div class="dest-card">
-              <img src="/images/barcelona.jpg" alt="Barcelona">
-              <div class="dest-info">
-                <div class="dest-city">Barcelona</div>
-                <div class="dest-region">Catalonia, Spain</div>
-                <div class="dest-price">Avg. nightly price: $295</div>
-              </div>
-            </div>
-          </div>
-      
-          <button class="carousel-btn right" onclick="slideRight()">
-            <span class="arrow">&#10095;</span>
-          </button>
-        </div>
-      </section>
-      
+            <button class="carousel-btn left" onclick="slideLeft()">
+                <span class="arrow">&#10094;</span>
+            </button>
 
-      
-      <section style="position: relative; width: 100%; height: 60vh; overflow: hidden; 
+            <div class="carousel-track" id="carouselTrack">
+                <div class="dest-card">
+                    <img src="/images/paris.jpg" alt="Paris">
+                    <div class="dest-info">
+                        <div class="dest-city">Paris</div>
+                        <div class="dest-region">Île-de-France, France</div>
+                        <div class="dest-price">Avg. nightly price: $320</div>
+                    </div>
+                </div>
+
+                <div class="dest-card">
+                    <img src="/images/tokyo.jpg" alt="Tokyo">
+                    <div class="dest-info">
+                        <div class="dest-city">Tokyo</div>
+                        <div class="dest-region">Japan</div>
+                        <div class="dest-price">Avg. nightly price: $270</div>
+                    </div>
+                </div>
+
+                <div class="dest-card">
+                    <img src="/images/dubai.jpg" alt="Dubai">
+                    <div class="dest-info">
+                        <div class="dest-city">Dubai</div>
+                        <div class="dest-region">United Arab Emirates</div>
+                        <div class="dest-price">Avg. nightly price: $390</div>
+                    </div>
+                </div>
+
+                <div class="dest-card">
+                    <img src="/images/rome.jpg" alt="Rome">
+                    <div class="dest-info">
+                        <div class="dest-city">Rome</div>
+                        <div class="dest-region">Italy</div>
+                        <div class="dest-price">Avg. nightly price: $250</div>
+                    </div>
+                </div>
+
+                <div class="dest-card">
+                    <img src="/images/bangkok.jpg" alt="Bangkok">
+                    <div class="dest-info">
+                        <div class="dest-city">Bangkok</div>
+                        <div class="dest-region">Thailand</div>
+                        <div class="dest-price">Avg. nightly price: $180</div>
+                    </div>
+                </div>
+
+                <div class="dest-card">
+                    <img src="/images/barcelona.jpg" alt="Barcelona">
+                    <div class="dest-info">
+                        <div class="dest-city">Barcelona</div>
+                        <div class="dest-region">Catalonia, Spain</div>
+                        <div class="dest-price">Avg. nightly price: $295</div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn right" onclick="slideRight()">
+                <span class="arrow">&#10095;</span>
+            </button>
+        </div>
+    </section>
+
+
+
+    <section style="position: relative; width: 100%; height: 60vh; overflow: hidden; 
       border-radius: 0 2rem 2rem 0; margin: auto; max-width: 100%;">
 
-<!-- Background Image -->
-<img src="/images/mid2.jpg" 
-alt="Traveler on beach at sunset"
-style="width: 100%; height: 100%; object-fit: cover; border-radius: 0 2rem 2rem 0;">
+        <!-- Background Image -->
+        <img src="/images/mid2.jpg" alt="Traveler on beach at sunset"
+            style="width: 100%; height: 100%; object-fit: cover; border-radius: 0 2rem 2rem 0;">
 
-<!-- Text Overlay -->
-<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        <!-- Text Overlay -->
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
    color: white; text-align: center; padding: 1rem; background-color: rgba(0, 0, 0, 0.4); 
    border-radius: 1rem; max-width: 90%;">
-<h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Go Big. Go Abroad.</h1>
-<p style="font-size: 1.2rem; max-width: 600px; margin: auto;">
-    Start your day with adventure—an international escape is full of endless possibilities.</p>
-<a href="#" 
-style="display: inline-block; margin-top: 1.5rem; padding: 0.75rem 1.5rem; 
+            <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Go Big. Go Abroad.</h1>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: auto;">
+                Start your day with adventure—an international escape is full of endless possibilities.</p>
+            <a href="#" style="display: inline-block; margin-top: 1.5rem; padding: 0.75rem 1.5rem; 
    background-color: #0071c2; color: white; text-decoration: none; border-radius: 6px;">
-Unlock Your Deals
-</a>
-</div>
-</section>
+                Unlock Your Deals
+            </a>
+        </div>
+    </section>
 
     <!-- <section class="dest_bx pd50">
         <div class="container">
@@ -1465,9 +1573,9 @@ Unlock Your Deals
                </a>
                     </div>
                 </div> -->
-            </div>
-        </div>
-    </section> 
+    </div>
+    </div>
+    </section>
 
     <section class="dest_sec">
         <div class="container">
@@ -1723,7 +1831,7 @@ Unlock Your Deals
 
 
 
- </p>
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -1749,30 +1857,41 @@ Unlock Your Deals
                 <div class="col-md-7">
                     <div class="row">
                         <div class="about_sec">
-                           
+
 
                             <h4><strong>Fly Smarter with Expedite Trips — Affordable Flights, Simplified</strong></h4>
 
-                            <p><strong>Expedite Trips</strong> is your go-to travel partner for booking affordable domestic and international flights. Whether you're flying across the U.S. or embarking on a global adventure to Europe, Asia, or Canada, we’re here to make your travel planning easy, efficient, and affordable. Our mission? To simplify your journey while saving you money every step of the way.</p>
-                            
+                            <p><strong>Expedite Trips</strong> is your go-to travel partner for booking affordable
+                                domestic and international flights. Whether you're flying across the U.S. or embarking
+                                on a global adventure to Europe, Asia, or Canada, we’re here to make your travel
+                                planning easy, efficient, and affordable. Our mission? To simplify your journey while
+                                saving you money every step of the way.</p>
+
                             <h5><strong>Why Choose Expedite Trips?</strong></h5>
-                            
+
                             <p><strong>1. Tailored Travel Options</strong><br>
-                            Our expert travel advisors compare hundreds of airlines to bring you the best routes and rates that match your schedule, budget, and preferences — all in one place.</p>
-                            
+                                Our expert travel advisors compare hundreds of airlines to bring you the best routes and
+                                rates that match your schedule, budget, and preferences — all in one place.</p>
+
                             <p><strong>2. 24/7 Expert Support</strong><br>
-                            Plans changed? Need to rebook or cancel? Our round-the-clock customer service team is always ready to assist, so you can travel with peace of mind.</p>
-                            
+                                Plans changed? Need to rebook or cancel? Our round-the-clock customer service team is
+                                always ready to assist, so you can travel with peace of mind.</p>
+
                             <p><strong>3. Great Deals Year-Round</strong><br>
-                            Score affordable fares any time of year — from seasonal promotions to exclusive discounts, we help you fly more for less.</p>
-                            
+                                Score affordable fares any time of year — from seasonal promotions to exclusive
+                                discounts, we help you fly more for less.</p>
+
                             <p><strong>4. Last-Minute Travel, No Problem</strong><br>
-                            Spontaneous trip or urgent travel need? We've got your back with unbeatable last-minute flight deals that won’t stretch your wallet.</p>
-                            
-                            <p>Questions or ready to take off? Call us anytime at <strong>(888) 441-8506</strong>. With <strong>Expedite Trips</strong>, you're not just booking a flight — you're planning a better travel experience.</p>
-                            
-                            
-                            
+                                Spontaneous trip or urgent travel need? We've got your back with unbeatable last-minute
+                                flight deals that won’t stretch your wallet.</p>
+
+                            <p>Questions or ready to take off? Call us anytime at <strong>(888) 519-5331</strong>. With
+                                <strong>Expedite Trips</strong>, you're not just booking a flight — you're planning a
+                                better travel experience.
+                            </p>
+
+
+
 
                         </div>
                     </div>
@@ -1786,7 +1905,9 @@ Unlock Your Deals
         </div>
     </section>
 
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+        rel="stylesheet">
 
     <!-- <style>
         .greatAirfarespopUp .airlinerLogo {
@@ -2574,7 +2695,7 @@ Unlock Your Deals
     </style> -->
 
     <div id="boxes" class="col-sm-6 col-sm-offset-3">
-        <a href="tel:(888) 441-8506">
+        <a href="tel:(888) 519-5331">
             <div class="d-block d-md-block d-lg-none">
                 <div class="modal fade show custompopup" style="display: block;">
                     <div class="modal-dialog modal-dialog-centered">
@@ -2584,15 +2705,19 @@ Unlock Your Deals
                                 <i class="fa fa-times" aria-hidden="true"></i>
                             </button>
                             <div class="popup-content">
-                                <img alt="Logo" class="header-logo" loading="lazy" width="120" height="40" decoding="async" data-nimg="1" style="color:transparent" src="images/expedia.png">
+                                <img alt="Logo" class="header-logo" loading="lazy" width="120" height="40"
+                                    decoding="async" data-nimg="1" style="color:transparent" src="images/expedia.png">
                                 <p>Talk to a travel expert and Save 25%</p>
                                 <h2 class="support-no">
-                                    <i class="fas fa-headset"></i> (888) 441-8506
+                                    <i class="fas fa-headset"></i> (888) 519-5331
                                 </h2>
                                 <hr>
                                 <h5>24/7 Reservation Support</h5>
                                 <div class="row justify-content-center">
-                                    <div class="col-6 align-self-center"><img alt="Logo" class="" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto" sizes="100vw" src="images/left-man.jpg"></div>
+                                    <div class="col-6 align-self-center"><img alt="Logo" class="" loading="lazy"
+                                            width="50" height="50" decoding="async" data-nimg="1"
+                                            style="color:transparent;width:100%;height:auto" sizes="100vw"
+                                            src="images/left-man.jpg"></div>
                                     <div class="col-6">
                                         <ul class="arrow-list">
                                             <li>Tickets Booking</li>
@@ -2606,7 +2731,7 @@ Unlock Your Deals
                                         <img src="images/cal2.gif" style="width:50px; height:50px">
                                         <div>
                                             <p class="mb-0">Call Us &amp; get Upto <small>40%OFF</small> on Flights</p>
-                                            <h4 class="mb-0">(888) 441-8506</h4>
+                                            <h4 class="mb-0">(888) 519-5331</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -2624,245 +2749,276 @@ Unlock Your Deals
             top: 30px;
             right: 34px;
             background-color: transparent;
-            color: #000; /* Adjust color as needed */
+            color: #000;
+            /* Adjust color as needed */
             border: none;
             font-size: 24px;
             cursor: pointer;
             z-index: 20;
         }
-    
+
         .closePopup i {
             font-size: 24px;
             font-weight: bold;
         }
-    
+
         .closePopup:hover {
-            color: #f00; /* Optional hover effect */
+            color: #f00;
+            /* Optional hover effect */
         }
     </style>
 
-<script>
-    function closePopup() {
-        var popup = document.getElementById("boxes");
-        popup.style.display = "none";
-    }
-</script>
+    <script>
+        function closePopup() {
+            var popup = document.getElementById("boxes");
+            popup.style.display = "none";
+        }
+    </script>
 
     <style>
         .d-lg-none {
-              display: none !important;
-          }  
-          
-          #boxes{ display:none;}
-          
-           .modal.fade.show {
-              opacity: 1;
-              padding: 0 !important;
-              overflow: unset;
-              background: rgba(0, 0, 0, .85);
-              text-align: center;    z-index: 9999999999;
-          }   
-      .popup-content {
-          background-color: #fff;
-          margin: 6% auto;
-          padding: 8px;
-          border: 1px solid #00185e;
-          width: 96%;
-          max-width: 375px;
-          box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
-          border-radius: 8px;
-          text-align: center;
-      }
-      .custompopup .modal-footer.border-0 {
-          margin-top: 0px;
-      }
-      
-      .border-0 {
-          border: 0 !important;
-      }
-      .modal-footer {
-          display: flex;
-          flex-shrink: 0;
-          flex-wrap: wrap;
-          align-items: center;
-          justify-content: flex-end;
-          padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap)* .5);
-          background-color: var(--bs-modal-footer-bg);
-          border-top: var(--bs-modal-footer-border-width) solid var(--bs-modal-footer-border-color);
-          border-bottom-right-radius: var(--bs-modal-inner-border-radius);
-          border-bottom-left-radius: var(--bs-modal-inner-border-radius);
-      }
-      .pt-0 {
-          padding-top: 0 !important;
-      }
-      
-      .modal-content {
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          color: var(--bs-modal-color);
-          pointer-events: auto;
-          background-color: var(--bs-modal-bg);
-          background-clip: padding-box;
-          border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
-          border-radius: var(--bs-modal-border-radius);
-          outline: 0;
-      }
-      .modal-content {
-          background: hsla(0, 0%, 100%, 0) !important;
-      }
-      .modal.show .modal-dialog {
-          transform: none;
-      }
-      .modal.fade .modal-dialog {
-          transition: transform .3s ease-out;
-          transform: translateY(91px);
-      }
-      @media (max-width: 767px) {
-          .modal.show .modal-dialog {
-              margin: 0;
-          }
-      }
-      .modal-dialog-centered {
-          display: flex;
-          align-items: center;
-          min-height: calc(100% - var(--bs-modal-margin)* 2);
-      }
-      .modal-dialog {
-          position: relative;
-          width: auto;
-          margin: var(--bs-modal-margin);
-          pointer-events: none;
-      }
-      
-      .header-logo {
-          width: auto;
-          margin-bottom: 20px;
-          margin-left: 40px;
-          margin-top: 10px;
-      }
-      .support-no {
-          font-size: 32px;
-          font-weight: 700;
-          color: #ff5722;
-      }
-      hr {
-          width: 100%;
-          height: 3px !important;
-          color: #da552f !important;
-         
-          margin-top: 0 !important;
-          margin: 1rem 0;
-         
-          border: 0;
-          border-top: var(--bs-border-width) solid;
-          opacity: .25;
-      }
-      .justify-content-center {
-          justify-content: center !important;
-      }
-      
-      .row {
-          --bs-gutter-x: 1.5rem;
-          --bs-gutter-y: 0;
-          display: flex;
-          flex-wrap: wrap;
-          margin-top: calc(-1* var(--bs-gutter-y));
-          margin-right: calc(-.5* var(--bs-gutter-x));
-          margin-left: calc(-.5* var(--bs-gutter-x));
-      }
-      .align-self-center {
-          align-self: center !important;
-      }
-      .arrow-list {
-          list-style-type: none;
-          padding: 0;
-          text-align: left;
-          font-weight: 500;
-      }
-      .arrow-list li, .arrow-list li:hover {
-          background: linear-gradient(90deg, #4d8cff, #fff);
-      }
-      
-      .arrow-list li {
-          position: relative;
-          color: #00185e;
-          padding: 1px 0 0 7px !important;
-          margin: 12px 0 !important;
-          cursor: pointer;
-          transition: background .3s;
-          border-radius: 12px 0;
-          
-          font-size: 16px;
-          line-height: 1.9;
-          font-weight: 400;
-      }
-      .call-offers {
-          width: 92%;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          background: #00308D;
-          padding: 10px 15px;
-          border-radius: 5px;
-          color: #fff;
-          text-align: left;
-          margin-top: 12px;
-      }
-      .call-offers h4 {
-          font-size: 24px;
-      }
-      p.mb-0 {
-          font-size: 13px;
-      }
-      p.mb-0 small {
-          color: #fff;
-          background-color: #0f4ab5;
-          border-radius: 5px;
-          padding: 3px;
-          font-weight: 400;
-          letter-spacing: 1px;
-      }
-      .custompopup h4 {
-          margin-top: 10px;
-          color: #fff;
-          font-size: 25px;
-          line-height: 30px;
-          font-weight: 700;
-      }
-      
-      @media (min-width:320px) and (max-width:767px){
-          .d-block {display: block !important;}
-       .btn-secondary {
-              font-size: 14px;
-              font-weight: 600;
-              border-radius: 20px;
-              background: rgba(0, 74, 173, 0) !important;
-              color: #ed942d !important;
-              border: 0;
-              padding: 10px 30px !important;
-              right: -3px !important;
-              position: relative !important;
-              top: 79px !important;
-              border: none !important;
-          }   
-          
-         #boxes{ display:block;} 
-          
-      }    
-          
-      </style>
-   
-   <script>
-    function myFunction1() {
-      var x = document.getElementById("boxes");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
+            display: none !important;
+        }
+
+        #boxes {
+            display: none;
+        }
+
+        .modal.fade.show {
+            opacity: 1;
+            padding: 0 !important;
+            overflow: unset;
+            background: rgba(0, 0, 0, .85);
+            text-align: center;
+            z-index: 9999999999;
+        }
+
+        .popup-content {
+            background-color: #fff;
+            margin: 6% auto;
+            padding: 8px;
+            border: 1px solid #00185e;
+            width: 96%;
+            max-width: 375px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .custompopup .modal-footer.border-0 {
+            margin-top: 0px;
+        }
+
+        .border-0 {
+            border: 0 !important;
+        }
+
+        .modal-footer {
+            display: flex;
+            flex-shrink: 0;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-end;
+            padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap)* .5);
+            background-color: var(--bs-modal-footer-bg);
+            border-top: var(--bs-modal-footer-border-width) solid var(--bs-modal-footer-border-color);
+            border-bottom-right-radius: var(--bs-modal-inner-border-radius);
+            border-bottom-left-radius: var(--bs-modal-inner-border-radius);
+        }
+
+        .pt-0 {
+            padding-top: 0 !important;
+        }
+
+        .modal-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            color: var(--bs-modal-color);
+            pointer-events: auto;
+            background-color: var(--bs-modal-bg);
+            background-clip: padding-box;
+            border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+            border-radius: var(--bs-modal-border-radius);
+            outline: 0;
+        }
+
+        .modal-content {
+            background: hsla(0, 0%, 100%, 0) !important;
+        }
+
+        .modal.show .modal-dialog {
+            transform: none;
+        }
+
+        .modal.fade .modal-dialog {
+            transition: transform .3s ease-out;
+            transform: translateY(91px);
+        }
+
+        @media (max-width: 767px) {
+            .modal.show .modal-dialog {
+                margin: 0;
+            }
+        }
+
+        .modal-dialog-centered {
+            display: flex;
+            align-items: center;
+            min-height: calc(100% - var(--bs-modal-margin)* 2);
+        }
+
+        .modal-dialog {
+            position: relative;
+            width: auto;
+            margin: var(--bs-modal-margin);
+            pointer-events: none;
+        }
+
+        .header-logo {
+            width: auto;
+            margin-bottom: 20px;
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+
+        .support-no {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ff5722;
+        }
+
+        hr {
+            width: 100%;
+            height: 3px !important;
+            color: #da552f !important;
+
+            margin-top: 0 !important;
+            margin: 1rem 0;
+
+            border: 0;
+            border-top: var(--bs-border-width) solid;
+            opacity: .25;
+        }
+
+        .justify-content-center {
+            justify-content: center !important;
+        }
+
+        .row {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(-1* var(--bs-gutter-y));
+            margin-right: calc(-.5* var(--bs-gutter-x));
+            margin-left: calc(-.5* var(--bs-gutter-x));
+        }
+
+        .align-self-center {
+            align-self: center !important;
+        }
+
+        .arrow-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            font-weight: 500;
+        }
+
+        .arrow-list li,
+        .arrow-list li:hover {
+            background: linear-gradient(90deg, #4d8cff, #fff);
+        }
+
+        .arrow-list li {
+            position: relative;
+            color: #00185e;
+            padding: 1px 0 0 7px !important;
+            margin: 12px 0 !important;
+            cursor: pointer;
+            transition: background .3s;
+            border-radius: 12px 0;
+
+            font-size: 16px;
+            line-height: 1.9;
+            font-weight: 400;
+        }
+
+        .call-offers {
+            width: 92%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: #00308D;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: #fff;
+            text-align: left;
+            margin-top: 12px;
+        }
+
+        .call-offers h4 {
+            font-size: 24px;
+        }
+
+        p.mb-0 {
+            font-size: 13px;
+        }
+
+        p.mb-0 small {
+            color: #fff;
+            background-color: #0f4ab5;
+            border-radius: 5px;
+            padding: 3px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .custompopup h4 {
+            margin-top: 10px;
+            color: #fff;
+            font-size: 25px;
+            line-height: 30px;
+            font-weight: 700;
+        }
+
+        @media (min-width:320px) and (max-width:767px) {
+            .d-block {
+                display: block !important;
+            }
+
+            .btn-secondary {
+                font-size: 14px;
+                font-weight: 600;
+                border-radius: 20px;
+                background: rgba(0, 74, 173, 0) !important;
+                color: #ed942d !important;
+                border: 0;
+                padding: 10px 30px !important;
+                right: -3px !important;
+                position: relative !important;
+                top: 79px !important;
+                border: none !important;
+            }
+
+            #boxes {
+                display: block;
+            }
+
+        }
+    </style>
+
+    <script>
+        function myFunction1() {
+            var x = document.getElementById("boxes");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
     </script>
 
     <script>
@@ -2928,9 +3084,11 @@ Unlock Your Deals
             0% {
                 transform: scale(1, 1);
             }
+
             50% {
                 transform: scale(1.3, 1.3);
             }
+
             100% {
                 transform: scale(1, 1);
             }
@@ -3008,12 +3166,15 @@ Unlock Your Deals
             0% {
                 opacity: 1;
             }
+
             5% {
                 opactiy: 1;
             }
+
             6% {
                 opactiy: .8;
             }
+
             100% {
                 opactiy: .8;
             }
@@ -3154,11 +3315,11 @@ Unlock Your Deals
 
 
     <header class="headers _headers callStringNew footerNumShow">
-        <a href="tel:(888) 441-8506" class="fulclk">
-            <span class="_call-num">(888) 441-8506</span>
+        <a href="tel:(888) 519-5331" class="fulclk">
+            <span class="_call-num">(888) 519-5331</span>
         </a>
         <div class="callIcon1 ">
-            <a href="tel:(888) 441-8506" class="_phonebox pulse">
+            <a href="tel:(888) 519-5331" class="_phonebox pulse">
                 <span class="wifi-symbol">
                     <span class="wifi-circle first"></span>
                     <span class="wifi-circle second"></span>
@@ -3168,9 +3329,9 @@ Unlock Your Deals
             </a>
         </div>
         <div class="rightCall">
-            <a href="tel:(888) 441-8506">
+            <a href="tel:(888) 519-5331">
                 <span class="_callphone">Call Us &amp; get Upto <small>40%OFF</small> on Flights</span>
-                <span class="_numcall">(888) 441-8506</span>
+                <span class="_numcall">(888) 519-5331</span>
             </a>
             <img class="callImgGirl" src="images/callImgGirl_cruise2.jpg" alt="calling girl icon">
         </div>
@@ -3190,8 +3351,10 @@ Unlock Your Deals
                             <li><a href="/about"><i class="fa fa-angle-right"></i> About Us</a></li>
                             <li><a href="/disclaimer"><i class="fa fa-angle-right"></i> Disclaimer</a></li>
                             <li><a href="/privacy-policy"><i class="fa fa-angle-right"></i> Privacy Policy</a></li>
-                            <li><a href="/terms-conditions"><i class="fa fa-angle-right"></i> Terms & Conditions</a></li>
-                            <li class="dsnp-ex"><a href="/cancellation-refund"><i class="fa fa-angle-right"></i> Cancellation & Refund Policy</a></li>
+                            <li><a href="/terms-conditions"><i class="fa fa-angle-right"></i> Terms & Conditions</a>
+                            </li>
+                            <li class="dsnp-ex"><a href="/cancellation-refund"><i class="fa fa-angle-right"></i>
+                                    Cancellation & Refund Policy</a></li>
                             <!-- <li><a href="/disclaimer"><i class="fa fa-angle-right"></i> Disclaimer</a></li>
                             <li><a href="/privacy-policy"><i class="fa fa-angle-right"></i> Privacy Policy</a></li>
                             <li><a href="/terms-conditions"><i class="fa fa-angle-right"></i> Terms & Conditions</a></li>
@@ -3205,10 +3368,10 @@ Unlock Your Deals
                     <div class="ftr_bx">
                         <h4>Contact <span>Info</span></h4>
                         <ul class="dsnp-uladm" style="margin-bottom: 10px;">
-                            <li class="dsnp-liadm"><a href="javascript:void(0);"><i class="fa fa-home"></i> 10140 Covington Cross Dr
+                            <li class="dsnp-liadm"><a href="javascript:void(0);"><i class="fa fa-home"></i>10130 Covington Cross Dr
 Las Vegas, NV 89144, USA
-   </a></li>
-                            <li><a href="tel: (888) 441-8506"><i class="fa fa-phone"></i>  (888) 441-8506 </a></li>
+                                </a></li>
+                            <li><a href="tel: (888) 519-5331"><i class="fa fa-phone"></i> (888) 519-5331 </a></li>
                             <!-- <li><a href="https://expeditetrips.com/"><i class=" fa fa-desktop"></i> Expedite Trips.com</a></li> -->
                             <li>
                                 <a href="mailto:info@expeditetrips.com" style="display: flex; align-items: center;">
@@ -3225,7 +3388,9 @@ Las Vegas, NV 89144, USA
                 <div class="col-md-12">
                     <div class="ftr_bx">
                         <h4>Disclaimer </h4>
-                        <p>Expedite Trips is an independent travel booking portal in the U.S., not affiliated with any airline or company. We are not responsible for any loss or damage resulting from use of this website.</p>
+                        <p>Expedite Trips is an independent travel booking portal in the U.S., not affiliated with any
+                            airline or company. We are not responsible for any loss or damage resulting from use of this
+                            website.</p>
                     </div>
                 </div>
 
@@ -3252,7 +3417,8 @@ Las Vegas, NV 89144, USA
         </div>
     </div>
 
-    <div class="footer_btm">Copyright © 2024 expeditetrips.com is a unit of Expedite Trips LLC. All Rights Reserved</div>
+    <div class="footer_btm">Copyright © 2024 expeditetrips.com is a unit of Expedite Trips LLC. All Rights Reserved
+    </div>
 
 
 
@@ -3263,7 +3429,7 @@ Las Vegas, NV 89144, USA
 
 <script>
     //IIFE
-    (function() {
+    (function () {
         "use strict";
 
         var canvas, ctx;
@@ -3350,21 +3516,22 @@ Las Vegas, NV 89144, USA
 
 <style>
     .image-slider-section .swiper {
-      width: 100%;
-      max-width: 1200px;
-      height: 400px;
-      margin: auto;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        width: 100%;
+        max-width: 1200px;
+        height: 400px;
+        margin: auto;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     }
+
     .swiper-slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
-    </style>
-    
+</style>
+
 <script>
     function closePopup() {
         var popup = document.getElementById("boxes");
@@ -3373,38 +3540,38 @@ Las Vegas, NV 89144, USA
 </script>
 <script>
     const swiper = new Swiper(".mySwiper", {
-      loop: true,
-      autoplay: {
-        delay: 3000,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+        loop: true,
+        autoplay: {
+            delay: 3000,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
     });
-  </script>
+</script>
 <script>
     function slideLeft() {
-      document.getElementById('carouselTrack').scrollBy({
-        left: -300,
-        behavior: 'smooth'
-      });
+        document.getElementById('carouselTrack').scrollBy({
+            left: -300,
+            behavior: 'smooth'
+        });
     }
-  
+
     function slideRight() {
-      document.getElementById('carouselTrack').scrollBy({
-        left: 300,
-        behavior: 'smooth'
-      });
+        document.getElementById('carouselTrack').scrollBy({
+            left: 300,
+            behavior: 'smooth'
+        });
     }
-  </script>
-  
-  
-  <script>
+</script>
+
+
+<script>
     // Function to check if the user is on a mobile device
     function isMobileDevice() {
         return window.innerWidth <= 767; // Adjust breakpoint as needed
@@ -3428,6 +3595,7 @@ Las Vegas, NV 89144, USA
 
 <style>
     #boxes {
-        display: none; /* Initially hide the popup */
+        display: none;
+        /* Initially hide the popup */
     }
 </style>
