@@ -36,7 +36,7 @@ app.get('/us-flights', (req, res) => {
   res.render('travel', { title: 'Travel' });
 });
 
-app.get('/train', (req, res) => {
+app.get('/via-travel', (req, res) => {
   res.render('train', { title: 'Train' });
 });
 
