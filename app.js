@@ -36,6 +36,10 @@ app.get('/us-flights', (req, res) => {
   res.render('travel', { title: 'Travel' });
 });
 
+app.get('/train', (req, res) => {
+  res.render('train', { title: 'Train' });
+});
+
 app.get('/disclaimer', (req, res) => {
   res.render('disclaimer', { title: 'Disclaimer' });
 });
@@ -64,6 +68,8 @@ app.get('/sitemap.xml', (req, res) => {
 app.get('/mexico-flights', (req, res) => {
   res.render('mexicoflight', { title: 'Mexico Flights' });
 });
+
+
 
 
 
