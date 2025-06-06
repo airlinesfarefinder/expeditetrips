@@ -1256,3 +1256,14 @@ a:visited {
   float: right;
   margin-right: 10px;
 }
+
+
+
+
+@media (max-width: 768px) {
+  .ftr_bx ul li {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+}
