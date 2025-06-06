@@ -37,7 +37,7 @@ app.get('/us-flights', (req, res) => {
 });
 
 app.get('/via-travel', (req, res) => {
-  res.render('via-train', { title: 'Train' });
+  res.render('train', { title: 'Train' });
 });
 
 app.get('/disclaimer', (req, res) => {
