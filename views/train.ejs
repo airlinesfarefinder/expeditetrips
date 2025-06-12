@@ -1,356 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- <?php include 'inc/head.php' ?> -->
 
-<!-- <?php include 'inc/head.php' ?> -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111517" />
 
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#111517">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
     <title></title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
 
-
-    <link rel="stylesheet" href="../train/assets/css/bootstrap.css">
-    <link rel="stylesheet" href="../train/assets/css/landing_page.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="../train/assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="../train/assets/css/landing_page.css" />
+    <link rel="stylesheet" href="../train/assets/css/train_banner.css" />
+  </head>
+  <body>
     <div id="nav">
-    <div class="container-fluid">
+      <div class="container-fluid">
         <div class="row">
-            <div class="inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-3  col-xs-4">
-                            <a href="https://expeditetrips.com/">
-                                <div class="logo"></div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <div id="navigation_menu" class="menu">
-                                <ul class="clearfix">
-                                    <li>
-                                        <a href="https://expeditetrips.com/">
-                                            <b>Home</b>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://expeditetrips.com/about">
-                                           <b> About Us</b>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://expeditetrips.com/us-flights">
-                                            <b>Travel</b>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://expeditetrips.com/via-travel">
-                                            <b>Train</b>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://expeditetrips.com/contact">
-                                           <b> Contact Us</b>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-xs-8">
-                            <div class="menu right">
-                                <ul class="clearfix">
-                                    <li class="withicon" style="float:left !important">
-                                        <a href="tel:(888) 453-7110">
-                                            <span class="icon" style="background-image:url('assets/img/phone01.png')"></span>
-                                            <div   >
-                                                <p style="margin:0; font-size:11px;">
-                                                    Call 24/7 for our best deals
-                                                </p>
-                                                <p style="margin: 0;">(888) 453-7110</p>
-                                            </div>
-                                             </a>
-                                    </li>
-                                    <li id="nav_toggle" class="icononly" onclick="toggle_nav_menu()" style="float:right !important">
-                                        <span class="icon" ></span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+          <div class="inner">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-3 col-xs-4">
+                  <a href="https://expeditetrips.com/">
+                    <div class="logo"></div>
+                  </a>
                 </div>
+                <div class="col-sm-6">
+                  <div id="navigation_menu" class="menu">
+                    <ul class="clearfix">
+                      <li>
+                        <a href="https://expeditetrips.com/">
+                          <b>Home</b>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://expeditetrips.com/about">
+                          <b> About Us</b>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://expeditetrips.com/us-flights">
+                          <b>Travel</b>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://expeditetrips.com/via-travel">
+                          <b>Train</b>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://expeditetrips.com/contact">
+                          <b> Contact Us</b>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-xs-8">
+                  <div class="menu right">
+                    <ul class="clearfix">
+                      <li class="withicon" style="float: left !important">
+                        <a href="tel:(888) 519-5331">
+                          <span
+                            class="icon"
+                            style="
+                              background-image: url('assets/img/phone01.png');
+                            "
+                          ></span>
+                          <div>
+                            <p style="margin: 0; font-size: 11px">
+                              Call 24/7 for our best deals
+                            </p>
+                            <p style="margin: 0">(888) 519-5331</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        id="nav_toggle"
+                        class="icononly"
+                        onclick="toggle_nav_menu()"
+                        style="float: right !important"
+                      >
+                        <span class="icon"></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div id="via-raildeals">
-    <div class="container">
+
+    <!-- Train Banner for Mobile -->
+    <div id="train_banner">
+      <a href="tel:(888) 519-5331"></a>
+      <div class="head">Reservations Desk</div>
+      <div
+        class="banner"
+        style="background-image: url('../train/assets/img/2148959670.jpg')"
+      ></div>
+      <div class="featured_lines">
+        <div class="line">New Bookings | Changes | Cancellations</div>
+      </div>
+      <div class="cta">
+        <span class="title"> No Hold Call Answered in 5 Sec. </span>
+        <div class="gutter">
+          <button class="call_button">
+            <div
+              class="icon animated_icon"
+              style="background-image: url('../train/assets/img/phone.gif')"
+            ></div>
+            <div class="text">
+              <h3>24/7 Customer Support</h3>
+              <p>(888) 519-5331</p>
+            </div>
+          </button>
+        </div>
+        <p class="outrow">Call Our Booking Experts and Save Up to 35%</p>
+      </div>
+    </div>
+
+    <div id="call_now_btn">
+      <a href="tel:(888) 519-5331">
+        <button class="call_button">
+          <div
+            class="icon animated_icon"
+            style="
+              background-image: url('../train/assets/img/call-ezgif.com-resize.gif');
+              background-size: 120%;
+            "
+          ></div>
+          <div class="text">
+            <h3>24/7 Customer Support</h3>
+            <p>(888) 519-5331</p>
+          </div>
+        </button>
+      </a>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const banner = document.getElementById("train_banner");
+
+        if (banner) {
+          banner.addEventListener("click", function () {
+            const link = banner.querySelector("a");
+            if (link) {
+              link.click();
+            }
+          });
+        }
+      });
+    </script>
+
+    <!-- Train Banner for Mobile -->
+
+    <div id="via-raildeals">
+      <div class="container">
         <div class="row">
-            <div id="small_banner">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="head">
-                                <h3>Bookings | Cancellations | Refunds</h3>
-                                <p>— All Just a Call Away
-                                    Speak Directly with a Travel Expert</p>
-                                <br>
-                                <a href="tel:">
-                                    <button class="button">Call Now</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+          <div id="small_banner">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="head">
+                    <h3>Bookings | Cancellations | Refunds</h3>
+                    <p>
+                      — All Just a Call Away Speak Directly with a Travel Expert
+                    </p>
+                    <br />
+                    <a href="tel:">
+                      <button class="button">Call Now</button>
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
 
-            <div id="features">
-                <div class="container">
+          <div id="features">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-12">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <div class="header">
-                                            <div class="icon">
-                                                🚆
-                                            </div>
-                                            <h1> Fast & Easy Bookings</h1>
-                                            <p>Reserve your train tickets in just minutes. Our platform is simple, secure, and built for your convenience.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="header">
-                                            <div class="icon">
-                                                🌐
-                                            </div>
-                                            <h1>Book Anytime, Anywhere</h1>
-                                            <p>Our platform works perfectly across mobile, tablet, and desktop. Whether you're at home or on the go.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="header">
-                                            <div class="icon">
-                                                🧾
-                                            </div>
-                                            <h1> Flexible Cancellations & Refunds</h1>
-                                            <p>Change of plans? No worries. Enjoy smooth cancellations and clear refund policies designed for your peace of mind.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="header" style="border:none">
-                                            <div class="icon">
-                                                ☎️
-                                            </div>
-                                            <h1> 24/7 Customer Support</h1>
-                                            <p>Our travel experts are available around the clock to assist with bookings, changes, and travel questions.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                      <div class="col-sm-3">
+                        <div class="header">
+                          <div class="icon">🚆</div>
+                          <h1>Fast & Easy Bookings</h1>
+                          <p>
+                            Reserve your train tickets in just minutes. Our
+                            platform is simple, secure, and built for your
+                            convenience.
+                          </p>
                         </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="header">
+                          <div class="icon">🌐</div>
+                          <h1>Book Anytime, Anywhere</h1>
+                          <p>
+                            Our platform works perfectly across mobile, tablet,
+                            and desktop. Whether you're at home or on the go.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="header">
+                          <div class="icon">🧾</div>
+                          <h1>Flexible Cancellations & Refunds</h1>
+                          <p>
+                            Change of plans? No worries. Enjoy smooth
+                            cancellations and clear refund policies designed for
+                            your peace of mind.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="header" style="border: none">
+                          <div class="icon">☎️</div>
+                          <h1>24/7 Customer Support</h1>
+                          <p>
+                            Our travel experts are available around the clock to
+                            assist with bookings, changes, and travel questions.
+                          </p>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
 
-            <div id="popular">
-                <div class="container">
-                    <div class="row">
-                        <div class="heading">
-                            <h3>Why Choose Us</h3>
-                            <h4></h4>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="gutter">
-                                <div class="card layer1 blog_peice negative">
-                                    <div class="bg" style="background-image:url('assets/img/pexels-chickenbunny-102941452-10028387.jpg')">
-                                    </div>
-                                    <div class="content">
-                                        <div class="overview">
-                                            <h3 class="title">
-                                                Travel in a Private Room
-                                            </h3>
-                                        </div>
-                                        <div class="excerpt">
-                                            <p>Enjoy comfort and privacy with your own personal space while you travel. Ideal for long journeys, solo relaxation, or quality time with a companion.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="gutter">
-                                <div class="card layer1 blog_peice negative">
-                                    <div class="bg" style="background-image:url('assets/img/young-man-using-his-smartphone-while-traveling-by-train_23-2149304478.jpg')">
-                                    </div>
-                                    <div class="content">
-                                        <div class="overview">
-                                            <h3 class="title">
-                                                Road Trip with Your Car
-                                            </h3>
-                                        </div>
-                                        <div class="excerpt">
-                                            <p>Take your vehicle along for the ride and explore freely at every stop. Enjoy the convenience of having your car with you from start to finish.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="gutter">
-                                <div class="card layer1 blog_peice negative">
-                                    <div class="bg" style="background-image:url('assets/img/cute-girl-railway-station-walking.jpg')">
-                                    </div>
-                                    <div class="content">
-                                        <div class="overview">
-                                            <h3 class="title">
-                                                Join Guest Rewards Point.
-                                            </h3>
-                                        </div>
-                                        <div class="excerpt">
-                                            <p>Sign up for our guest rewards program and start earning benefits with every trip. Enjoy exclusive perks, and member-only privileges.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="gutter">
-                                <div class="card layer1 blog_peice negative">
-                                    <div class="bg" style="background-image:url('assets/img/full-shot-people-traveling-by-train.jpg')">
-                                    </div>
-                                    <div class="content">
-                                        <div class="overview">
-                                            <h3 class="title">
-                                                Discover America
-                                            </h3>
-                                        </div>
-                                        <div class="excerpt">
-                                            <p>From iconic cities to breathtaking landscapes, explore the beauty and diversity of the USA by train. Every journey brings you closer to unforgettable destinations.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="gutter">
-                                <div class="card layer1 blog_peice negative">
-                                    <div class="bg" style="background-image:url('assets/img/front-view-kids-woman-train-station.jpg')">
-                                    </div>
-                                    <div class="content">
-                                        <div class="overview">
-                                            <h3 class="title">
-                                                Save on Group Travel with Share Fares
-                                            </h3>
-                                        </div>
-                                        <div class="excerpt">
-                                            <p>Traveling together pays off! Enjoy big savings when you book for multiple passengers with 
-                                                Share Fares — the more you ride, the less you pay. Prefer this mode of travel.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="gutter">
-                                <div class="card layer1 blog_peice negative">
-                                    <div class="bg" style="background-image:url('assets/img/2150578046.jpg')">
-                                    </div>
-                                    <div class="content">
-                                        <div class="overview">
-                                            <h3 class="title">
-                                                Save on family Travel
-                                            </h3>
-                                        </div>
-                                        <div class="excerpt">
-                                            <p>Make memories without breaking the budget! Enjoy special savings on tickets when traveling with family — comfort, convenience, and value for all ages.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+          <div id="popular">
+            <div class="container">
+              <div class="row">
+                <div class="heading">
+                  <h3>Why Choose Us</h3>
+                  <h4></h4>
                 </div>
-            </div>
-            <div id="hero_content">
-                <h3>🚂 All-Inclusive Train Vacations Made Easy</h3>
-                <p>Experience the ultimate hassle-free getaway with our all-inclusive train vacation packages. From breathtaking routes to comfortable accommodations, meals, and curated experiences — everything is taken care of. Whether you're planning a romantic escape, a family adventure, or a solo retreat, our bundled deals offer great value and unforgettable journeys, all without the stress of planning each detail yourself.</p>
-
-                <div class="infobox">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="item">
-                                    <span class="icon" style="background-image:url('assets/img/marketing.png')"></span>
-                                    <h3>Deals and Promotions</h3>
-                                    <p>Enjoy seasonal offers, last-minute deals, and early-bird discounts to save more on your rail travel adventures.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="item">
-                                    <span class="icon" style="background-image:url('assets/img/tag.png')"></span>
-                                    <h3>Vacation Rail Tours</h3>
-                                    <p>Explore iconic destinations with guided rail tour packages that include scenic train rides, lodging, and local experiences.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="item">
-                                    <span class="icon" style="background-image:url('assets/img/beach-umbrella.png')"></span>
-                                    <h3>Scenic Routes</h3>
-                                    <p>Travel through some of the most picturesque landscapes in comfort — from mountains and coastlines to countryside and national parks.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="item">
-                                    <span class="icon" style="background-image:url('assets/img/ticket.png')"></span>
-                                    <h3>Hotel + Train Bundles</h3>
-                                    <p>Enjoy seamless travel with packages that include train journeys, hotel stays, and extras — all in one easy booking.</p>
-                                </div>
-                            </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="gutter">
+                    <div class="card layer1 blog_peice negative">
+                      <div
+                        class="bg"
+                        style="
+                          background-image: url('assets/img/pexels-chickenbunny-102941452-10028387.jpg');
+                        "
+                      ></div>
+                      <div class="content">
+                        <div class="overview">
+                          <h3 class="title">Travel in a Private Room</h3>
                         </div>
+                        <div class="excerpt">
+                          <p>
+                            Enjoy comfort and privacy with your own personal
+                            space while you travel. Ideal for long journeys,
+                            solo relaxation, or quality time with a companion.
+                          </p>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+                <div class="col-sm-4">
+                  <div class="gutter">
+                    <div class="card layer1 blog_peice negative">
+                      <div
+                        class="bg"
+                        style="
+                          background-image: url('assets/img/young-man-using-his-smartphone-while-traveling-by-train_23-2149304478.jpg');
+                        "
+                      ></div>
+                      <div class="content">
+                        <div class="overview">
+                          <h3 class="title">Road Trip with Your Car</h3>
+                        </div>
+                        <div class="excerpt">
+                          <p>
+                            Take your vehicle along for the ride and explore
+                            freely at every stop. Enjoy the convenience of
+                            having your car with you from start to finish.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="gutter">
+                    <div class="card layer1 blog_peice negative">
+                      <div
+                        class="bg"
+                        style="
+                          background-image: url('assets/img/cute-girl-railway-station-walking.jpg');
+                        "
+                      ></div>
+                      <div class="content">
+                        <div class="overview">
+                          <h3 class="title">Join Guest Rewards Point.</h3>
+                        </div>
+                        <div class="excerpt">
+                          <p>
+                            Sign up for our guest rewards program and start
+                            earning benefits with every trip. Enjoy exclusive
+                            perks, and member-only privileges.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="gutter">
+                    <div class="card layer1 blog_peice negative">
+                      <div
+                        class="bg"
+                        style="
+                          background-image: url('assets/img/full-shot-people-traveling-by-train.jpg');
+                        "
+                      ></div>
+                      <div class="content">
+                        <div class="overview">
+                          <h3 class="title">Discover America</h3>
+                        </div>
+                        <div class="excerpt">
+                          <p>
+                            From iconic cities to breathtaking landscapes,
+                            explore the beauty and diversity of the USA by
+                            train. Every journey brings you closer to
+                            unforgettable destinations.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="gutter">
+                    <div class="card layer1 blog_peice negative">
+                      <div
+                        class="bg"
+                        style="
+                          background-image: url('assets/img/front-view-kids-woman-train-station.jpg');
+                        "
+                      ></div>
+                      <div class="content">
+                        <div class="overview">
+                          <h3 class="title">
+                            Save on Group Travel with Share Fares
+                          </h3>
+                        </div>
+                        <div class="excerpt">
+                          <p>
+                            Traveling together pays off! Enjoy big savings when
+                            you book for multiple passengers with Share Fares —
+                            the more you ride, the less you pay. Prefer this
+                            mode of travel.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="gutter">
+                    <div class="card layer1 blog_peice negative">
+                      <div
+                        class="bg"
+                        style="
+                          background-image: url('assets/img/2150578046.jpg');
+                        "
+                      ></div>
+                      <div class="content">
+                        <div class="overview">
+                          <h3 class="title">Save on family Travel</h3>
+                        </div>
+                        <div class="excerpt">
+                          <p>
+                            Make memories without breaking the budget! Enjoy
+                            special savings on tickets when traveling with
+                            family — comfort, convenience, and value for all
+                            ages.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div id="hero_content">
+            <h3>🚂 All-Inclusive Train Vacations Made Easy</h3>
+            <p>
+              Experience the ultimate hassle-free getaway with our all-inclusive
+              train vacation packages. From breathtaking routes to comfortable
+              accommodations, meals, and curated experiences — everything is
+              taken care of. Whether you're planning a romantic escape, a family
+              adventure, or a solo retreat, our bundled deals offer great value
+              and unforgettable journeys, all without the stress of planning
+              each detail yourself.
+            </p>
 
+            <div class="infobox">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="item">
+                      <span
+                        class="icon"
+                        style="
+                          background-image: url('assets/img/marketing.png');
+                        "
+                      ></span>
+                      <h3>Deals and Promotions</h3>
+                      <p>
+                        Enjoy seasonal offers, last-minute deals, and early-bird
+                        discounts to save more on your rail travel adventures.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="item">
+                      <span
+                        class="icon"
+                        style="background-image: url('assets/img/tag.png')"
+                      ></span>
+                      <h3>Vacation Rail Tours</h3>
+                      <p>
+                        Explore iconic destinations with guided rail tour
+                        packages that include scenic train rides, lodging, and
+                        local experiences.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="item">
+                      <span
+                        class="icon"
+                        style="
+                          background-image: url('assets/img/beach-umbrella.png');
+                        "
+                      ></span>
+                      <h3>Scenic Routes</h3>
+                      <p>
+                        Travel through some of the most picturesque landscapes
+                        in comfort — from mountains and coastlines to
+                        countryside and national parks.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="item">
+                      <span
+                        class="icon"
+                        style="background-image: url('assets/img/ticket.png')"
+                      ></span>
+                      <h3>Hotel + Train Bundles</h3>
+                      <p>
+                        Enjoy seamless travel with packages that include train
+                        journeys, hotel stays, and extras — all in one easy
+                        booking.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- features, deals, content -->
     </div>
-    <!-- features, deals, content -->
-</div>
 
+    <style>
+      .footer {
+        padding: 50px 0 30px;
+        background-position: 18% 43%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background: #00308d;
+      }
 
-<style>
-    .footer {
-    padding: 50px 0 30px;
-    background-position: 18% 43%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: #00308D;
-}
+      .ftr_bx {
+      }
 
-.ftr_bx {}
+      .ftr_bx h4 {
+        color: #fff;
+        letter-spacing: 0;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 0 12px 0;
+        text-transform: uppercase;
+      }
 
-.ftr_bx h4 {
-    color: #fff;
-    letter-spacing: 0;
-    font-size: 16px;
-    font-weight: 600;
-    margin: 0 0 12px 0;
-    text-transform: uppercase;
-}
-
-/*.ftr_bx h4::before
+      /*.ftr_bx h4::before
 {
 	content: "";
 	width: 75px;
@@ -370,124 +532,151 @@
     left: 5px;
 }*/
 
-.ftr_bx ul li {
-    padding: 6px 0;
-    width: 15%;
-    float: left;
-}
+      .ftr_bx ul li {
+        padding: 6px 0;
+        width: 15%;
+        float: left;
+      }
 
-.ftr_bx ul li.dsnp-ex {
-    width: 25%;
-}
+      .ftr_bx ul li.dsnp-ex {
+        width: 25%;
+      }
 
-ul.dsnp-uladm li {
-    width: 17%;
-}
+      ul.dsnp-uladm li {
+        width: 17%;
+      }
 
-.ftr_bx {
-    width: 100%;
-    float: left;
-    margin-bottom: 15px;
-}
+      .ftr_bx {
+        width: 100%;
+        float: left;
+        margin-bottom: 15px;
+      }
 
-ul.dsnp-uladm li.dsnp-liadm {
-    width: 47%;
-}
+      ul.dsnp-uladm li.dsnp-liadm {
+        width: 47%;
+      }
 
-.ftr_bx ul li a {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 400;
-}
+      .ftr_bx ul li a {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 400;
+      }
 
-.ftr_bx ul li a i {
-    color: #ffffff;
-    margin-right: 5px;
-    text-align: center;
-    font-size: 11px;
-}
+      .ftr_bx ul li a i {
+        color: #ffffff;
+        margin-right: 5px;
+        text-align: center;
+        font-size: 11px;
+      }
 
-.ftr_bx p {
-    color: #fff;
-    margin: 0;
-    line-height: 24px;
-    font-size: 15px;
-    text-align: justify;
-}
+      .ftr_bx p {
+        color: #fff;
+        margin: 0;
+        line-height: 24px;
+        font-size: 15px;
+        text-align: justify;
+      }
 
-.footer_btm {
-    text-align: center;
-    background: #00308D;
-    padding: 15px 0;
-    color: #fff;
-    letter-spacing: 0;
-    font-size: 13px;
-}
-</style>
+      .footer_btm {
+        text-align: center;
+        background: #00308d;
+        padding: 15px 0;
+        color: #fff;
+        letter-spacing: 0;
+        font-size: 13px;
+      }
+    </style>
 
-
-
-
-
- <footer class="footer">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-12">
-                    <div class="ftr_bx">
-                        <h4>Quick <span>Links</span></h4>
-                        <ul>
-
-                            <li><a href="/about"><i class="fa fa-angle-right"></i> About Us</a></li>
-                            <li><a href="/disclaimer"><i class="fa fa-angle-right"></i> Disclaimer</a></li>
-                            <li><a href="/privacy-policy"><i class="fa fa-angle-right"></i> Privacy Policy</a></li>
-                            <li><a href="/terms-conditions"><i class="fa fa-angle-right"></i> Terms & Conditions</a>
-                            </li>
-                            <li class="dsnp-ex"><a href="/cancellation-refund"><i class="fa fa-angle-right"></i>
-                                    Cancellation & Refund Policy</a></li>
-                            <!-- <li><a href="/disclaimer"><i class="fa fa-angle-right"></i> Disclaimer</a></li>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="ftr_bx">
+              <h4>Quick <span>Links</span></h4>
+              <ul>
+                <li>
+                  <a href="/about"
+                    ><i class="fa fa-angle-right"></i> About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="/disclaimer"
+                    ><i class="fa fa-angle-right"></i> Disclaimer</a
+                  >
+                </li>
+                <li>
+                  <a href="/privacy-policy"
+                    ><i class="fa fa-angle-right"></i> Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="/terms-conditions"
+                    ><i class="fa fa-angle-right"></i> Terms & Conditions</a
+                  >
+                </li>
+                <li class="dsnp-ex">
+                  <a href="/cancellation-refund"
+                    ><i class="fa fa-angle-right"></i> Cancellation & Refund
+                    Policy</a
+                  >
+                </li>
+                <!-- <li><a href="/disclaimer"><i class="fa fa-angle-right"></i> Disclaimer</a></li>
                             <li><a href="/privacy-policy"><i class="fa fa-angle-right"></i> Privacy Policy</a></li>
                             <li><a href="/terms-conditions"><i class="fa fa-angle-right"></i> Terms & Conditions</a></li>
                             <li class="dsnp-ex"><a href="/cancellation-refund"><i class="fa fa-angle-right"></i> Cancellation & Refund Policy</a></li> -->
-                            <li><a href="sitemap.xml"><i class="fa fa-angle-right"></i> Site Map</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-12">
-                    <div class="ftr_bx">
-                        <h4>Contact <span>Info</span></h4>
-                        <ul class="dsnp-uladm" style="margin-bottom: 10px;">
-                            <li class="dsnp-liadm"><a href="javascript:void(0);"><i class="fa fa-home"></i>10130 Covington Cross Dr
-Las Vegas, NV 89144, USA
-                                </a></li>
-                            <li><a href="tel: (888) 519-5331"><i class="fa fa-phone"></i> (888) 519-5331 </a></li>
-                            <!-- <li><a href="https://expeditetrips.com/"><i class=" fa fa-desktop"></i> Expedite Trips.com</a></li> -->
-                            <li>
-                                <a href="mailto:info@expeditetrips.com" style="display: flex; align-items: center;">
-                                    <i class="fa fa-envelope" style="margin-right: 8px;"></i>
-                                    info@expeditetrips.com
-                                </a>
-                            </li>
-                        </ul>
-                        <!--<img src="images/iata.png" alt="iata">
-          <img src="images/logo-arc.png" alt="iata"> -->
-                    </div>
-                </div>
-
-                <div class="col-md-12">
-                    <div class="ftr_bx">
-                        <h4>Disclaimer </h4>
-                        <p>Expedite Trips is an independent travel booking portal in the U.S., not affiliated with any
-                            airline or company. We are not responsible for any loss or damage resulting from use of this
-                            website.</p>
-                    </div>
-                </div>
-
+                <li>
+                  <a href="sitemap.xml"
+                    ><i class="fa fa-angle-right"></i> Site Map</a
+                  >
+                </li>
+              </ul>
             </div>
+          </div>
 
+          <div class="col-md-12">
+            <div class="ftr_bx">
+              <h4>Contact <span>Info</span></h4>
+              <ul class="dsnp-uladm" style="margin-bottom: 10px">
+                <li class="dsnp-liadm">
+                  <a href="javascript:void(0);"
+                    ><i class="fa fa-home"></i>10130 Covington Cross Dr Las
+                    Vegas, NV 89144, USA
+                  </a>
+                </li>
+                <li>
+                  <a href="tel: (888) 519-5331"
+                    ><i class="fa fa-phone"></i> (888) 519-5331
+                  </a>
+                </li>
+                <!-- <li><a href="https://expeditetrips.com/"><i class=" fa fa-desktop"></i> Expedite Trips.com</a></li> -->
+                <li>
+                  <a
+                    href="mailto:info@expeditetrips.com"
+                    style="display: flex; align-items: center"
+                  >
+                    <i class="fa fa-envelope" style="margin-right: 8px"></i>
+                    info@expeditetrips.com
+                  </a>
+                </li>
+              </ul>
+              <!--<img src="images/iata.png" alt="iata">
+          <img src="images/logo-arc.png" alt="iata"> -->
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="ftr_bx">
+              <h4>Disclaimer</h4>
+              <p>
+                Expedite Trips is an independent travel booking portal in the
+                U.S., not affiliated with any airline or company. We are not
+                responsible for any loss or damage resulting from use of this
+                website.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
